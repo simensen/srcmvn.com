@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Reboot"
+date: 2011-11-09 21:06
+comments: true
+description: Time to start blogging again.
+
+---
+
+Time to start blogging about code again.
+
+I have some [older content](http://blog.srcmvn.com/) that will stay on Posterous for the foreseeable future.
