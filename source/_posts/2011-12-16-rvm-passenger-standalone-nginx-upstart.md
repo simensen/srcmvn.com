@@ -26,7 +26,7 @@ Lastly, create a `passenger` wrapper for `ree-1.8.7-2011.03@cimonitor`. This wil
 
 `rvm wrapper ree-1.8.7-2011.03@cimonitor cimonitor passenger`
 
-**Note:** The first time that `cimonitor_passenger server` is run for any given user it will need to download, setup and install its own version of nginx. It might not hurt to run `cimonitor_passenger server` once by hand before trying to load from upstart.
+**Note:** The first time that `cimonitor_passenger start` is run for any given user it will need to download, setup and install its own version of nginx. It might not hurt to run `cimonitor_passenger start` once by hand before trying to load from upstart.
 
 ## Upstart
 
