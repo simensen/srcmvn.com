@@ -2,13 +2,19 @@
 layout: base.twig
 permalink: index.html
 ---
-
 <div class="blog-index">
   {% assign index = true %}
-  {% for post in site.posts %}
-  {% assign content = post.content %}
+  {% for post in data.posts %}
     <article>
-      {% include "article.twig" with {post: post} %}
+        <h3><a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h3>
+        <div>
+            {% if post.blocks.excerpt %}
+                {{ post.blocks.excerpt|raw }}
+                <a href="{{site.url}}{{post.url}}"">read more</a>
+            {% else %}
+                {{ post.blocks.content|raw }}
+            {% endif %}
+        </div>
     </article>
   {% endfor %}
 </div>

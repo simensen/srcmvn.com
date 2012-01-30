@@ -1,4 +1,5 @@
 ---
+layout: base.twig
 title: Blog Archive
 permalink: blog/archives/index.html
 ---
@@ -8,8 +9,14 @@ permalink: blog/archives/index.html
 {% for post in data.posts %}
 {% capture this_year %}{{ post.date | date("Y") }}{% endcapture %}
 {% if year != this_year %}
+  {% assign month = '0' %}
   {% assign year = this_year %}
   <h2>{{ year }}</h2>
+{% endif %}
+{% capture this_month %}{{ post.date | date("M") }}{% endcapture %}
+{% if month != this_month %}
+  {% assign month = this_month %}
+  <h3>{{ month }}</h3>
 {% endif %}
 <article>
   {% include "individual_archived_post.twig" %}

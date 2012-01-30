@@ -1,8 +1,29 @@
 <html>
     <head>
         <title>{{ site.title }} &emdash; {{ page.title }}</title>
+        <meta name="author" content="{{ site.author }}">
+        <link href="{{site.url}}/atom.xml" rel="alternate" title="{{ site.title }}" type="application/atom+xml">
+        <link rel="icon" href="{{site.url}}/favicon.ico">
     </head>
     <body>
+        <header>
+            <h1>{{ site.title }}</h1>
+            <h2>{{ site.subtitle }}</h2>
+            <navigation>
+                <ul>
+                    <li><a href="{{site.url}}/">Blog</a></li>
+                    <li><a href="{{site.url}}/blog/archives">Archives</a></li>
+                </ul>
+            </navigation>
+        </header>
         {% block content %}Fallback content.{% endblock %}
+        <footer>
+            <navigation>
+                <ul>
+                    <li><a href="{{site.url}}/">Blog</a></li>
+                    <li><a href="{{site.url}}/blog/archives">Archives</a></li>
+                </ul>
+            </navigation>
+        </footer>
     </body>
 </html>

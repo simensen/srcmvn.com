@@ -8,6 +8,11 @@ tags: ubuntu upstart nginx passenger rvm rails
 
 ---
 
+{% block excerpt %}
+After testing the excellent [Pivotal Lab's](http://pivotallabs.com/) [Continuous Integration Monitor](https://github.com/pivotal/cimonitor) we decided to use it long-term. This meant we needed to find a way to run the software on boot ([Upstart](http://upstart.ubuntu.com/)) under its own environment ([RVM](http://beginrescueend.com/)) and get [nginx](http://nginx.org/) to reverse proxy the site. This turned out to be a little more difficult than I had hoped but in the end it all was all good.
+{% endblock %}
+
+{% block content %}
 After testing the excellent [Pivotal Lab's](http://pivotallabs.com/) [Continuous Integration Monitor](https://github.com/pivotal/cimonitor) we decided to use it long-term. This meant we needed to find a way to run the software on boot ([Upstart](http://upstart.ubuntu.com/)) under its own environment ([RVM](http://beginrescueend.com/)) and get [nginx](http://nginx.org/) to reverse proxy the site. This turned out to be a little more difficult than I had hoped.
 
 ## RVM and Passenger
@@ -43,3 +48,4 @@ This starts passenger it cimonitor's own RVM and even manages to run it as a non
 The nginx configuration was more or less a standard reverseproxy setup at this point. Sadly, cimonitor has too many `/path…` hardcoded into its views to be able to be effectively mounted anywhere but at the root.
 
 If anyone finds a way to bypass this I'd love to hear it! But as far as I could tell, there was not going to be any way to have the entire application live under, say, `http://ci.example.com/cimonitor`.
+{% endblock %}

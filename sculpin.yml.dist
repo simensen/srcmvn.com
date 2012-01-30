@@ -8,5 +8,8 @@ author: Beau Simensen
 disqus_short_name: srcmvn
 google_analytics_tracking_id: UA-12685022-2
 hub_url: http://dflydev.superfeedr.com/
+posts:
+    permalink: blog/:year/:month/:day/:filename/
 bundles:
   - dflydev\sculpin\bundle\twigGitHubGistBundle\TwigGitHubGistBundle
+preview_destination: preview
