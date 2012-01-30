@@ -1,5 +1,5 @@
 ---
-layout: nil
+permalink: atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -8,21 +8,21 @@ layout: nil
   <link href="{{ site.url }}/atom.xml" rel="self"/>
   <link href="{{ site.url }}/"/>
   {% if site.hub_url %}<link href="{{ site.hub_url }}" rel="hub"/>{% endif %}
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <updated>{{ site.time }}</updated>
   <id>{{ site.url }}/</id>
   <author>
-    <name><![CDATA[{{ site.author | strip_html }}]]></name>
+    <name><![CDATA[{{ site.author }}]]></name>
     {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
   </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+  <generator uri="http://sculpin.co/">Sculpin</generator>
 
-  {% for post in site.posts limit: 20 %}
+  {% for post in data.posts %}
   <entry>
-    <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
+    <title type="html"><![CDATA[{{ post.title }}]]></title>
     <link href="{{ site.url }}{{ post.url }}"/>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <updated>{{ post.date }}</updated>
     <id>{{ site.url }}{{ post.id }}</id>
-    <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content>
+    <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
   </entry>
   {% endfor %}
 </feed>

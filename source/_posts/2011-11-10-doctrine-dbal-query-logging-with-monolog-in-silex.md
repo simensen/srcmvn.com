@@ -21,7 +21,7 @@ Yay for not having a lot to go on, right? Thankfully it turned out to be pretty 
 
 Here is the full solution:
 
-{% gist 1357223 %}
+{{ gist(1357223) }}
 
 This can be added at any point after the Doctrine Provider has been registered.
 

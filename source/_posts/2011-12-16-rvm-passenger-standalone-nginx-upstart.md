@@ -34,7 +34,7 @@ On the surface Upstart looks pretty simple and an improvement over System-V init
 
 Once everything became more simple with the Passenger RVM wrapper, I was able to try to come up with a simpler upstart script. Here are the contents of our `/etc/init/pivotal_cimonitor.conf`:
 
-{% gist 1487570 %}
+{{ gist(1487570) }}
 
 This starts passenger it cimonitor's own RVM and even manages to run it as a non-privileged user. Success!
 

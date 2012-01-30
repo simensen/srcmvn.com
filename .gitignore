@@ -1,4 +1,3 @@
-.cache
-.sass-cache
+.sculpin.yml.dumped
 public
-source/_config.yml
+sculpin.yml

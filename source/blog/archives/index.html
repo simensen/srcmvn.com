@@ -1,18 +1,18 @@
 ---
-layout: page
 title: Blog Archive
-footer: false
+permalink: blog/archives/index.html
 ---
 
+{% assign year = '0' %}
 <div id="blog-archives">
-{% for post in site.posts reverse %}
-{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-{% unless year == this_year %}
+{% for post in data.posts %}
+{% capture this_year %}{{ post.date | date("Y") }}{% endcapture %}
+{% if year != this_year %}
   {% assign year = this_year %}
   <h2>{{ year }}</h2>
-{% endunless %}
+{% endif %}
 <article>
-  {% include archive_post.html %}
+  {% include "individual_archived_post.twig" %}
 </article>
 {% endfor %}
 </div>

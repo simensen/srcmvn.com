@@ -1,0 +1,12 @@
+url: http://srcmvn.com
+title: Source Maven
+subtitle: Code Partition for Beau Simensen
+author: Beau Simensen
+title: Source Maven
+subtitle: Code Partition for Beau Simensen
+author: Beau Simensen
+disqus_short_name: srcmvn
+google_analytics_tracking_id: UA-12685022-2
+hub_url: http://dflydev.superfeedr.com/
+bundles:
+  - dflydev\sculpin\bundle\twigGitHubGistBundle\TwigGitHubGistBundle
