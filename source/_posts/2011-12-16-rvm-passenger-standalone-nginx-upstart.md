@@ -12,7 +12,7 @@ After testing the excellent [Pivotal Lab's](http://pivotallabs.com/) [Continuous
 
 ## RVM and Passenger
 
-RVM is great! Unfortunately it made it more complicated to get something to run under a specific RVN environment at boot. The key turned out to be `rvm wrapper`. It took awhile to discover this nice feature and how to use it effectively.
+RVM is great! Unfortunately it made it more complicated to get something to run under a specific RVM environment at boot. The key turned out to be `rvm wrapper`. It took awhile to discover this nice feature and how to use it effectively.
 
 First, make sure that you are using the correct Ruby. Assuming you have RVM installed (and you've already entered the cimonitor directory at some point) you should be able to execute the following:
 
