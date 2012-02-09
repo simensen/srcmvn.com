@@ -1,4 +1,7 @@
 .sculpin.yml.dumped
+bin
+cache
+composer.lock
 preview
 public
 sculpin.yml
