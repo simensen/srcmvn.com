@@ -2,7 +2,9 @@
 bin
 cache
 composer.lock
+composer.phar
 preview
 public
+sculpin.phar
 sculpin.yml
 vendor
