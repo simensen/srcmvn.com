@@ -1,2 +1,19 @@
 {% extends "base.twig" %}
-{% block content %}{% endblock %}
+{% block content_wrapper %}
+
+{% if page.previousPost or page.nextPost %}
+<nav>
+{% if page.nextPost %}
+&laquo; <a href="{{ site.url }}{{ page.nextPost.url }}">{{ page.nextPost.title }}</a>
+{% endif %}
+{% if page.nextPost and page.previousPost %}
+|
+{% endif %}
+{% if page.previousPost %}
+<a href="{{ site.url }}{{ page.previousPost.url }}">{{ page.previousPost.title }}</a> &raquo;
+{% endif %}
+</nav>
+{% endif %}
+{% block content %}stuff{% endblock %}
+
+{% endblock %}
