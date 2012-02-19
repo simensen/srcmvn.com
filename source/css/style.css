@@ -1,0 +1,293 @@
+
+/* ==|== primary styles =====================================================
+   Author: Beau Simensen <beau@dflydev.com>
+   ========================================================================== */
+
+
+* { -moz-box-sizing: border-box; box-sizing: border-box; }
+
+header.site div.info,
+.mainContentContainer .mainContent,
+footer.site div.details {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+body {
+    color: #333;
+    background-color: #444;
+    background-image: url(dark_mosaic.png);
+}
+
+a {
+    color: #558;
+}
+a:visited {
+    color: #88a;
+}
+
+.mainContentContainer {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #f0f0f0;
+    background-image: url(husk.png);
+}
+
+.mainContent p {
+    line-height: 1.5em;
+}
+
+article.indexPost time {
+    margin-top: -1em;
+    position: absolute;
+}
+article.indexPost time span {
+    font-size: .75em;
+    color: #888;
+}
+
+article.post .entryContent p,
+article.indexPost p {
+    font-family: serif;
+}
+
+article.post footer time:before {
+    content: "\02022 ";
+    padding: 0 .5em;
+}
+article.post nav.article {
+    margin-top: 2em;
+    padding: .5em;
+}
+article.post nav.article {
+    clear: both;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+article.post nav.article {
+    font-size: .75em;
+}
+article.post nav.article .previous,
+article.post nav.article .next {
+    text-decoration: none;
+}
+article.post nav.article .previous:before {
+    content: "\00ab ";
+}
+article.post nav.article .previous {
+    float: left;
+}
+article.post nav.article .next:after {
+    content: " \00bb";
+}
+article.post nav.article .next {
+    float: right;
+}
+
+.mainContent article.post h1:first-of-type {
+    font-size: 1.6em;
+    margin-bottom: .25em;
+}
+
+.mainContent article.post.noLeadInfo .entryContent p:first-of-type,
+.mainContent article.post .leadInfo {
+    font-size: 1.15em;
+    line-height: 1.25em;
+    margin: 1.25em 0;
+}
+
+code {
+    font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+    font-size: .75em;
+    padding: .1em .25em;
+    margin: .1em;
+    border: 1px solid #dedede;
+    background-color: #ddd;
+
+  -webkit-border-radius: .25em; 
+     -moz-border-radius: .25em; 
+          border-radius: .25em; 
+  
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+}
+
+.rgba code {
+    background-color: rgba(255,255,255,.5);
+}
+
+.mainContent pre {
+    white-space: pre;
+    overflow-x: scroll;
+    word-wrap: normal;
+}
+pre code {
+    background-color: ghostWhite;
+    display: block;
+    padding: 1em;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.rgba pre code {
+    background-color: ghostWhite;
+}
+header.site {
+    border-bottom: 2px solid #333;
+}
+
+footer.site {
+    border-top: 2px solid #333;
+    color: #aaa;
+}
+
+footer.site a {
+    color: inherit;
+}
+
+header.site hgroup {
+    font-size: .5em;
+}
+
+header.site h1,
+header.site h2 {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    display: inline-block;
+}
+header.site h1 {
+    font-size: 2.5em;
+    margin-right: .2em;
+    line-height: 1em;
+}
+header.site h2 {
+    font-size: 1em;
+}
+
+header.site h1 a,
+header.site h1 a:visited {
+    text-decoration: none;
+    color: #ccc;
+}
+
+header.site h2 {
+    color: #aaa;
+}
+
+.mainContent h1,
+.mainContent h2,
+.mainContent h3,
+.mainContent h4 {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.1em;
+}
+.mainContent h1 a,
+.mainContent h2 a,
+.mainContent h3 a,
+.mainContent h4 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mainContent article.post .entryContent h2,
+.mainContent article.post .entryContent h3,
+.mainContent article.post .entryContent h4 {
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 1px dashed #aaa;
+}
+
+.mainContent article.post footer {
+    margin-top: 3em;
+}
+.mainContent article.post footer .meta.author {
+    padding-bottom: 1em;
+    border-bottom: 1px dashed #aaa;
+}
+
+.indexPost:last-of-type {
+    border-bottom: none;
+}
+.indexPost {
+    border-bottom: 1px dashed #aaa;
+    padding-bottom: 2em;
+    margin-top: 3em;
+}
+.indexPost h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.indexPost p:first-of-type {
+}
+footer.site a {
+    text-decoration: none;
+}
+footer.site a:hover {
+    text-decoration: underline;
+}
+footer.site div.details {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+footer.site .socialMedia {
+    float: right;
+    font-size: 1em;
+    font-weight: bold;
+}
+footer.site .socialMedia ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer.site div.details {
+    font-size: .75em;
+}
+
+article.post section.comments h2 {
+}
+#disqus_thread {
+    margin-top: -3.5em;
+}
+.mainContent article.post footer .meta {
+    font-size: .75em;
+}
+
+@media only screen and (min-width: 480px) {
+    header.site div.info,
+    .mainContentContainer .mainContent,
+    footer.site div.details {
+        max-width: 1000px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    header.site hgroup {
+        font-size: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    footer.site div.details {
+        font-size: 1em;
+    }
+    .mainContent {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    article.post time {
+    }
+    article.post time span {
+    }
+
+    .mainContent article.post h1:first-of-type {
+        font-size: 2.75em;
+    }
+    
+    .mainContent article.post.noLeadInfo .entryContent p:first-of-type,
+    .mainContent article.post .leadInfo {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    .indexPost h3 {
+        font-size: 1.75em;
+    }
+}

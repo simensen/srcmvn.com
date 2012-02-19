@@ -21,15 +21,15 @@ RVM is great! Unfortunately it made it more complicated to get something to run 
 
 First, make sure that you are using the correct Ruby. Assuming you have RVM installed (and you've already entered the cimonitor directory at some point) you should be able to execute the following:
 
-`rvm use ree-1.8.7-2011.03@cimonitor`
+    rvm use ree-1.8.7-2011.03@cimonitor
 
 Next, install Phusion Passenger Standalone according to the [standalone user guide](http://www.modrails.com/documentation/Users%20guide%20Standalone.html).
 
-`gem install passenger`
+    gem install passenger
 
 Lastly, create a `passenger` wrapper for `ree-1.8.7-2011.03@cimonitor`. This will create a script named `cimonitor_passenger` that contains everything it needs to ensure that `passenger` is called with the appropriate RVM environment.
 
-`rvm wrapper ree-1.8.7-2011.03@cimonitor cimonitor passenger`
+    rvm wrapper ree-1.8.7-2011.03@cimonitor cimonitor passenger
 
 **Note:** The first time that `cimonitor_passenger start` is run for any given user it will need to download, setup and install its own version of nginx. It might not hurt to run `cimonitor_passenger start` once by hand before trying to load from upstart.
 

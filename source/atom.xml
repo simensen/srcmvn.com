@@ -1,5 +1,7 @@
 ---
 permalink: atom.xml
+use:
+    - posts
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -14,12 +16,12 @@ permalink: atom.xml
     <name><![CDATA[{{ site.author }}]]></name>
     {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
   </author>
-  <generator uri="http://sculpin.co/">Sculpin</generator>
+  <generator uri="http://getsculpin.com">Sculpin</generator>
 
   {% for post in data.posts %}
   <entry>
     <title type="html"><![CDATA[{{ post.title }}]]></title>
-    <link href="{{ site.url }}{{ post.url }}"/>
+    <link href="{{ site.url }}{{ post.url }}/"/>
     <updated>{{ post.date|date("c") }}</updated>
     <id>{{ site.url }}{{ post.url }}</id>
     <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>

@@ -11,9 +11,9 @@ I recently had an opportunity to try out [Silex](http://silex.sensiolabs.org)  f
 {% endblock %}
 
 {% block content %}
-I recently had an opportunity to try out [Silex](http://silex.sensiolabs.org)  for a small project. I'm enjoying it so far, which is a good sign that I'll enjoy working with [Symfony](http://symfony.com) as Silex is heavily based on [Symfony Components](https://github.com/symfony/symfony/tree/master/src/Symfony/Component).
+I recently had an opportunity to try out [Silex](http://silex.sensiolabs.org)  for a small project. I'm enjoying it so far, which is a good sign that I'll enjoy working with [Symfony](http://symfony.com) as Silex is heavily based on [Symfony Components](https://github.com/symfony/symfony/tree/master/src/Symfony/Component). One thing that I found to be missing out of the box was a way to log [Doctrine DBAL](http://www.doctrine-project.org/projects/dbal) queries.
 
-One thing that I found to be missing out of the box was a way to log [Doctrine DBAL](http://www.doctrine-project.org/projects/dbal) queries. This is especially useful when something bad happens and all you have to go on is a vague error like:
+This is especially noticeable when something bad happens and all you have to go on is a vague error like:
 
     PDOException: SQLSTATE[HY000]: General error: 1 near " ": syntax error
 

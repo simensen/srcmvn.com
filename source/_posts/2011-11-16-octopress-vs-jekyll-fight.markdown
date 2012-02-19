@@ -8,15 +8,22 @@ tags: jekyll octopress ruby
 ---
 
 {% block excerpt %}
+
 After spending a few nights looking into [Jekyll](https://github.com/mojombo/jekyll) and digging into how [other Jekyll sites](https://github.com/mojombo/jekyll/wiki/sites) ticked, I came away a little frustrated. So I hit up [#BeerAndCodeSeattle](http://seattle.beerandcode.org/) to see if anyone else had a similar experience with Jekyll. [@smoak](http://mybrainoncode.com) suggested I check out [Octopress](http://octopress.org/).
+
 {% endblock %}
 
-{% block content %}
+{% block lead_info %}
 After spending a few nights looking into [Jekyll](https://github.com/mojombo/jekyll) and digging into how [other Jekyll sites](https://github.com/mojombo/jekyll/wiki/sites) ticked, I came away a little frustrated.
 
 For example, I *really* liked how [metajack](http://metajack.im) was structured but some of the basic layout stuff was not working correctly for my site. An hour or so later, I discovered that metajack is running on a [patched Jekyll fork](https://github.com/metajack/jekyll) that has not been updated since [2009](https://github.com/metajack/jekyll/commits/master). Joy.
 
 I hit up [#BeerAndCodeSeattle](http://seattle.beerandcode.org/) to see if anyone else had a similar experience with Jekyll. [@smoak](http://mybrainoncode.com) suggested I check out [Octopress](http://octopress.org/).
+
+{% endblock %}
+
+{% block content %}
+
 
 Octopress looked great on the surface! It came with a nice theme and a bunch of code display related plugins. It was not long before I started bump into a few issues, though.
 
@@ -29,4 +36,5 @@ I've spent the last few nights trying to figure out how to best separate my site
 All in all, Octopress is a nice step up from Jekyll in that a lot of work has been done to provide a nice looking theme, a solid set of plugins, and functionality. What you get for free you pay for in complexity and a loss of flexibility.
 
 I am hoping that the latter will be addressed sooner rather than later. And by the looks of work going into [this branch](https://github.com/imathis/octopress/tree/move_rakefile_configs) I think that will definitely be the case!
+
 {% endblock %}

@@ -1,20 +1,72 @@
 {% extends "base.twig" %}
+{% set lead_info %}{% block lead_info %}{% endblock %}{% endset %}
 {% block content_wrapper %}
-
-{% if page.previousPost or page.nextPost %}
-<nav>
-{% if page.nextPost %}
-&laquo; <a href="{{ site.url }}{{ page.nextPost.url }}">{{ page.nextPost.title }}</a>
+<article class="post {% if lead_info is empty %}noLeadInfo{% else %}hasLeadInfo{% endif %}">
+<header class="post-article">
+    <h1 class="post-title">{{ page.title }}</h1>
+</header>
+<div class="entryContent">
+{% if lead_info is not empty %}
+<div class="leadInfo">
+{{ lead_info }}
+</div>
 {% endif %}
-{% if page.nextPost and page.previousPost %}
-|
-{% endif %}
-{% if page.previousPost %}
-<a href="{{ site.url }}{{ page.previousPost.url }}">{{ page.previousPost.title }}</a> &raquo;
-{% endif %}
-</nav>
-{% endif %}
-<h1>{{ page.title }}</h1>
 {% block content %}Nothing to see here.{% endblock %}
-
+</div>
+<footer class="article">
+    <p class="meta author">
+        <span class="byline author vcard">Posted by <a href="{{ site.url }}/author/beau" class="fn">Beau Simensen</a></span>
+        <time datetime="{{ page.date|date('c') }}" pubdate>
+            <span class='month'>{{ page.date|date('M') }}</span> <span class='day'>{{ page.date|date('jS') }}</span> <span class='year'>{{ page.date|date('Y') }}</span>
+        </time>
+    </p>
+    <div class="sharing">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="srcmvn" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
+        <div class="g-plusone" data-size="medium"></div>
+        <!-- <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div> -->
+    </div>
+{% if page.previousPost or page.nextPost %}
+    <nav class="article clearfix">
+    {% if page.previousPost %}
+    <a class="previous" href="{{ site.url }}{{ page.previousPost.url }}" title="{{ page.previousPost.title }}"><span class="title">{{ page.previousPost.title }}</span></a>
+    {% endif %}
+    {% if page.nextPost %}
+    <a class="next" href="{{ site.url }}{{ page.nextPost.url }}" title="{{ page.previousPost.title }}"><span class="title">{{ page.nextPost.title }}</span></a>
+    {% endif %}
+    </nav>
+{% endif %}
+    <section class="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+ </footer>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'srcmvn';
+    var disqus_identifier = '{{ site.url }}{{ page.url }}';
+    var disqus_url = '{{ site.url }}{{ page.url }}';
+    var disqus_script = 'embed.js';
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+<script type="text/javascript">
+(function() {
+  var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+  script.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+})();
+</script>
+<script type="text/javascript">
+(function(){
+  var twitterWidgets = document.createElement('script');
+  twitterWidgets.type = 'text/javascript';
+  twitterWidgets.async = true;
+  twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+  document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+})();
+</script>
+</article>
 {% endblock %}
