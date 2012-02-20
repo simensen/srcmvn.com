@@ -10,3 +10,4 @@ posts:
 bundles:
   - dflydev\sculpin\bundle\twigGitHubGistBundle\TwigGitHubGistBundle
 preview_destination: preview
+hub_url: http://dflydev.superfeedr.com/
