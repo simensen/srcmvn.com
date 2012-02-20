@@ -243,11 +243,6 @@ footer.site div.details {
     font-size: .75em;
 }
 
-article.post section.comments h2 {
-}
-#disqus_thread {
-    margin-top: -3.5em;
-}
 .mainContent article.post footer .meta {
     font-size: .75em;
 }
@@ -289,5 +284,14 @@ article.post section.comments h2 {
     }
     .indexPost h3 {
         font-size: 1.75em;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mainContentContainer {
+        background-size: 250px 250px;
+    }
+    body {
+        background-size: 150px 148px;
     }
 }
