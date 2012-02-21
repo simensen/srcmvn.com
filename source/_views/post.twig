@@ -3,7 +3,7 @@
 {% block content_wrapper %}
 <article class="post {% if lead_info is empty %}noLeadInfo{% else %}hasLeadInfo{% endif %}">
 <header class="post-article">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title">{% if page.externalLink %}<a href="{{ page.externalLink }}">{% endif %}{{ page.title }}{%  if page.externalLink %} &rarr; </a>{% endif %}</h1>
 </header>
 <div class="entryContent">
 {% if lead_info is not empty %}

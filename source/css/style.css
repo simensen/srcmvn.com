@@ -197,7 +197,7 @@ header.site h2 {
     border-top: 1px dashed #aaa;
 }
 
-.mainContent article.post footer {
+.mainContent article.post footer.article {
     margin-top: 3em;
 }
 .mainContent article.post footer .meta.author {
@@ -247,6 +247,12 @@ footer.site div.details {
     font-size: .75em;
 }
 
+blockquote {
+    margin-left: .5em;
+    border-left: 2px solid #ccc;
+    padding-left: .5em;
+}
+
 @media only screen and (min-width: 480px) {
     header.site div.info,
     .mainContentContainer .mainContent,
@@ -277,13 +283,17 @@ footer.site div.details {
         font-size: 2.75em;
     }
     
-    .mainContent article.post.noLeadInfo .entryContent p:first-of-type,
+    .mainContent article.post.noLeadInfo .entryContent > p:first-of-type,
     .mainContent article.post .leadInfo {
         font-size: 1.5em;
         line-height: 1.5em;
     }
     .indexPost h3 {
         font-size: 1.75em;
+    }
+    .mainContent article.post .entryContent blockquote {
+        font-size: 1.25em;
+        line-height: 1.25em;
     }
 }
 
