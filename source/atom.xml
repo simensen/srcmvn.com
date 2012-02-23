@@ -20,6 +20,10 @@ use:
 
   {% for post in data.posts %}
   <entry>
+    <author>
+      <name><![CDATA[{{ site.author }}]]></name>
+      {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+    </author>
     <title type="html"><![CDATA[{{ post.title }}{% if post.meta.externalLink %} &#8594; {% endif %}]]></title>
     {% if post.meta.externalLink %}
       <link href="{{ post.meta.externalLink }}"/>
