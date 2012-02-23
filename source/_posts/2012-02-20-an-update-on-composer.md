@@ -23,7 +23,4 @@ Both [Composer](http://getcomposer.org) and [Packagist](http://packagist.org)
 got big updates this morning. Things really seem to be coming together nicely.
 I am happy that I have been able to help contribute to these projects.
 
-Read about all of the changes on the Nelmio blog
-[here](http://nelm.io/blog/2012/02/an-update-on-composer/).
-
 {% endblock %}

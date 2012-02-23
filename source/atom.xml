@@ -20,15 +20,18 @@ use:
 
   {% for post in data.posts %}
   <entry>
-    <title type="html"><![CDATA[{{ post.title }}{% if post.meta.externalLink %} &rarr; {% endif %}]]></title>
+    <title type="html"><![CDATA[{{ post.title }}{% if post.meta.externalLink %} &#8594; {% endif %}]]></title>
     {% if post.meta.externalLink %}
-    <link href="{{ post.meta.externalLink }}/"/>
+      <link href="{{ post.meta.externalLink }}"/>
     {% else %}
-    <link href="{{ site.url }}{{ post.url }}/"/>
+      <link href="{{ site.url }}{{ post.url }}/"/>
     {% endif %}
     <updated>{{ post.date|date("c") }}</updated>
     <id>{{ site.url }}{{ post.url }}</id>
-    <content type="html"><![CDATA[{{ post.blocks.content|raw }}<p><a rel="bookmark" href="{{ site.url }}{{ post.url }}">&infin; Permalink</a></p>]]></content>
+    <content type="html"><![CDATA[{{ post.blocks.content|raw }}
+<p><a rel="bookmark" href="{{ site.url }}{{ post.url }}">&infin; {{ site.title }} Permalink</a></p>
+{% if post.meta.externalLink %}<p><a rel="bookmark" href="{{ post.meta.externalLink }}">&rarr; External Link</a></p>{% endif %}
+]]></content>
   </entry>
   {% endfor %}
 </feed>

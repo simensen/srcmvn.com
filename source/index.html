@@ -13,8 +13,12 @@ use:
         </time>
         <h3>
             {% if post.meta.externalLink %}
-                <a href="{{ post.meta.externalLink }}">{{ post.title }}</a>
-                <a href="{{ site.url }}{{ post.url }}"> &rarr;</a>
+                {% if post.blocks.excerpt %}
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    <a href="{{ post.meta.externalLink }}"> &rarr;</a>
+                {% else %}
+                    <a href="{{ post.meta.externalLink }}">{{ post.title }} &rarr;</a>
+                {% endif %}
             {% else %}
                 <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
             {% endif %}
@@ -22,9 +26,19 @@ use:
         <div>
             {% if post.blocks.excerpt %}
                 {{ post.blocks.excerpt|raw }}
-                <a href="{{site.url}}{{post.url}}">read more</a>
+                <p>
+                    <a href="{{site.url}}{{post.url}}">&infin; Read more</a>
+                    {% if post.meta.externalLink %}
+                    &bull; <a href="{{post.meta.externalLink}}">&rarr; External link</a>
+                    {% endif %}
+                </p>
             {% else %}
                 {{ post.blocks.content|raw }}
+                {% if post.meta.externalLink %}
+                    <p>
+                        <a href="{{post.meta.externalLink}}">&rarr; External link</a>
+                    </p>
+                {% endif %}
             {% endif %}
 
 

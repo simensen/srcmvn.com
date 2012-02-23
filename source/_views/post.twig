@@ -12,6 +12,12 @@
 </div>
 {% endif %}
 {% block content %}Nothing to see here.{% endblock %}
+{% if page.externalLink %}
+<p>
+    <a href="{{ page.externalLink }}">&rarr; External link</a>
+</p>
+{% endif %}
+
 </div>
 <footer class="article">
     <p class="meta author">
