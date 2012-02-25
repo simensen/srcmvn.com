@@ -9,8 +9,6 @@ tags:
 
 ---
 
-{% block content %}
-
 > This weekend we have been busy hacking on Composer in our
 > office together with [Nils Adermann](http://www.naderman.de/)
 > and [Volker Dusch](http://edorian.posterous.com/). We
@@ -22,5 +20,3 @@ tags:
 Both [Composer](http://getcomposer.org) and [Packagist](http://packagist.org)
 got big updates this morning. Things really seem to be coming together nicely.
 I am happy that I have been able to help contribute to these projects.
-
-{% endblock %}
