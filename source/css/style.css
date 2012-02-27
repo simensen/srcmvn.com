@@ -37,7 +37,7 @@ a:visited {
     line-height: 1.5em;
 }
 
-article.indexPost time {
+article.indexPost .meta {
     margin-top: -1em;
     position: absolute;
 }
@@ -45,14 +45,33 @@ article.indexPost time span {
     font-size: .75em;
     color: #888;
 }
-
+article.indexPost .meta a {
+    font-size: .75em;
+    text-decoration: none;
+}
+/*
+article.indexPost .meta a:before {
+    content: "\02022 ";
+    padding: 0 .5em;
+}
+*/
 article.post .entryContent p,
 article.indexPost p {
     font-family: serif;
 }
 
+article.post footer a {
+    text-decoration: none;
+}
+article.post footer a:hover {
+    text-decoration: underline;
+}
 article.post footer time:before {
     content: "\02022 ";
+    padding: 0 .5em;
+}
+article.post footer time:after {
+    content: " \02022";
     padding: 0 .5em;
 }
 article.post nav.article {

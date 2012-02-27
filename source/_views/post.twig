@@ -12,12 +12,6 @@
 </div>
 {% endif %}
 {% block content %}Nothing to see here.{% endblock %}
-{% if page.externalLink %}
-<p>
-    <a href="{{ page.externalLink }}">&rarr; External link</a>
-</p>
-{% endif %}
-
 </div>
 <footer class="article">
     <p class="meta author">
@@ -25,6 +19,10 @@
         <time datetime="{{ page.date|date('c') }}" pubdate>
             <span class='month'>{{ page.date|date('M') }}</span> <span class='day'>{{ page.date|date('jS') }}</span> <span class='year'>{{ page.date|date('Y') }}</span>
         </time>
+        <a href="{{site.url}}{{post.url}}">&infin;</a>
+        {% if page.externalLink %}
+        <a href="{{page.externalLink}}">&rarr;</a>
+        {% endif %}
     </p>
     <div class="sharing">
         <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="srcmvn" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>

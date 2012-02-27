@@ -13,18 +13,20 @@ use:
   <updated>{{ site.time|date("c") }}</updated>
   <id>{{ site.url }}/</id>
   <author>
-    <name><![CDATA[{{ site.author }}]]></name>
-    {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+    <name>{{ site.author }}</name>
+    {% if site.email %}<email>{{ site.email }}</email>{% endif %}
   </author>
   <generator uri="http://getsculpin.com">Sculpin</generator>
 
   {% for post in data.posts %}
   <entry>
-    <author>
-      <name><![CDATA[{{ site.author }}]]></name>
-      {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
-    </author>
-    <title type="html"><![CDATA[{{ post.title }}{% if post.meta.externalLink %} &#8594; {% endif %}]]></title>
+    {% if not post.meta.externalLink %}
+        <author>
+          <name>{{ site.author }}</name>
+          {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+        </author>
+    {% endif %}
+    <title type="html">{{ post.title }}{% if post.meta.externalLink %} &#8594; {% endif %}</title>
     {% if post.meta.externalLink %}
       <link href="{{ post.meta.externalLink }}"/>
     {% else %}
