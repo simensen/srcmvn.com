@@ -19,7 +19,7 @@
         <time datetime="{{ page.date|date('c') }}" pubdate>
             <span class='month'>{{ page.date|date('M') }}</span> <span class='day'>{{ page.date|date('jS') }}</span> <span class='year'>{{ page.date|date('Y') }}</span>
         </time>
-        <a href="{{site.url}}{{post.url}}">&infin;</a>
+        <a href="{{site.url}}{{page.url}}">&infin;</a>
         {% if page.externalLink %}
         <a href="{{page.externalLink}}">&rarr;</a>
         {% endif %}
