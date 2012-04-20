@@ -25,7 +25,7 @@ preview_url           = config['preview_url']
 
 # The deploy root is the usual Sculpin destination
 # path.
-deploy_root           = config['destination']
+deploy_root           = config['output_dir']
 
 desc "Deploy site"
 task :deploy do
@@ -38,14 +38,14 @@ task :deploy do
   end
   deploy_remote_path    = config['deploy']['remote_path']
 
-  ok_failed system "sculpin generate --destination=#{deploy_root}"
+  ok_failed system "sculpin generate --output_dir=#{deploy_root}"
   ok_failed system "rsync -avze 'ssh -p #{deploy_ssh_port}' #{deploy_root}/ #{deploy_ssh_target}:#{deploy_remote_path}"
 
 end
 
 desc "Preview site locally"
 task :preview do
-    system "sculpin generate --watch --url=#{preview_url} --destination=#{preview_root}"
+    system "sculpin generate --watch --url=#{preview_url} --output_dir=#{preview_root}"
 end
 
 desc "Notify pubsubhubbub hub of new content"
