@@ -2,7 +2,8 @@
     "type": "sculpin-site",
     "require": {
         "php": ">=5.3.2",
-        "sculpin/sculpin": "master-dev",
-        "dflydev/twig-github-gist-sculpin-bundle": "master-dev"
-    }
+        "sculpin/sculpin": "*@dev",
+        "dflydev/twig-github-gist-sculpin-bundle": "*@dev"
+    },
+    "minimum-stability": "dev"
 }
