@@ -8,6 +8,6 @@ hub_url: http://dflydev.superfeedr.com/
 posts:
     permalink: blog/:year/:month/:day/:filename/
 bundles:
-  - dflydev\sculpin\bundle\twigGitHubGistBundle\TwigGitHubGistBundle
+  - Dflydev\Sculpin\Bundle\TwigGitHubGistBundle\TwigGitHubGistBundle
 preview_destination: preview
 hub_url: http://dflydev.superfeedr.com/
