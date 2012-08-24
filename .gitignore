@@ -1,10 +1,8 @@
-.sculpin.yml.dumped
 bin
 cache
 composer.lock
 composer.phar
-preview
-public
+logs
+output_*
 sculpin.phar
-sculpin.yml
 vendor
