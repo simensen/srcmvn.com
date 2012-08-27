@@ -1,8 +1,10 @@
+app/cache/*
+app/config/sculpin_kernel_*.yml
+app/config/sculpin_site_*.yml
+app/logs/*
 bin
-cache
 composer.lock
 composer.phar
-logs
 output_*
 sculpin.phar
 vendor
