@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adjusting Django Form Field Attributes From a View"
+title: "Adjusting Django Form Field Attributes from a View"
 date: 2012-11-06 13:02
 tags: django
 ---
