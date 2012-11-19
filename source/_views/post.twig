@@ -24,7 +24,15 @@
         <a href="{{page.externalLink}}">&rarr;</a>
         {% endif %}
     </p>
-    <div class="sharing">
+    {% if page.tags %}
+    <p class="meta tags">
+    Tags:
+    {% for tag in page.tags %}
+    {{ tag }}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+    </p>
+    {% endif %}
+    <div class="meta sharing">
         <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="srcmvn" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
         <div class="g-plusone" data-size="medium"></div>
         <!-- <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div> -->

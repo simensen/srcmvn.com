@@ -219,9 +219,16 @@ header.site h2 {
 .mainContent article.post footer.article {
     margin-top: 3em;
 }
+
 .mainContent article.post footer .meta.author {
-    padding-bottom: 1em;
-    border-bottom: 1px dashed #aaa;
+}
+
+.mainContent article.post footer .meta.tags {
+}
+
+.mainContent article.post footer .meta.sharing {
+    padding-top: 1em;
+    border-top: 1px dashed #aaa;
 }
 
 .indexPost:last-of-type {
