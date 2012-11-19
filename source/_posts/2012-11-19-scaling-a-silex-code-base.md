@@ -17,10 +17,10 @@ tags:
 > what is possible.
 > <footer>— [Igor Wiedler discusses "scaling" Silex](https://igor.io/2012/11/09/scaling-silex.html)</footer>
 
-I've mentioned a few times that Silex can be difficult for new
-users because Silex has no structure. It definitely gives people
-some skewed impressions on its capabilities if all they really
-have to work from is:
+I've mentioned a few times that I think Silex can be difficult for
+new users because Silex has no structure. It definitely gives people
+some skewed impressions on its capabilities if all they really have
+to work from is:
 
     require_once __DIR__.'/../vendor/autoload.php'; 
 
