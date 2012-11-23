@@ -1,14 +1,16 @@
 ---
 layout: base.twig
 title: Blog Archive
-permalink: blog/archives/index.html
+generator: pagination
+generator_data: posts
+pagination:
+    max_per_page: 50
 use:
     - posts
 ---
-
 {% set year = '0' %}
 <div id="blog-archives">
-{% for post in data.posts %}
+{% for post in page.pagination.items %}
 {% set this_year %}{{ post.date | date("Y") }}{% endset %}
 {% if year != this_year %}
   {% set month = '0' %}
@@ -24,4 +26,15 @@ use:
   {% include "individual_archived_post.twig" %}
 </article>
 {% endfor %}
+
+{% if page.pagination.previous_page or page.pagination.next_page %}
+    <nav class="article clearfix">
+    {% if page.pagination.previous_page %}
+    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Page Page"><span class="title">Previous Page</span></a>
+    {% endif %}
+    {% if page.pagination.next_page %}
+    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
+    {% endif %}
+    </nav>
+{% endif %}
 </div>

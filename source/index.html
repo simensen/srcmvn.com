@@ -1,12 +1,15 @@
 ---
 layout: base.twig
-permalink: index.html
+generator: pagination
+generator_data: posts
+pagination:
+    max_per_page: 20
 use:
     - posts
 ---
 <div class="blog-index">
   {% set index = true %}
-  {% for post in data.posts %}
+  {% for post in page.pagination.items %}
     <article class="indexPost">
         <div class="meta">
             <time datetime="{{ post.date|date('c') }}" pubdate>
@@ -42,3 +45,10 @@ use:
     </article>
   {% endfor %}
 </div>
+
+{% if page.pagination.previous_page or page.pagination.next_page %}
+<div>
+{% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
+{% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
+</div>
+{% endif %}
