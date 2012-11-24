@@ -6,7 +6,7 @@ tags: git
 
 ---
 As often happens, I committed `composer.lock` when I had not actually
-intended to do so. [Igor](twitter.com/igorwesome) broke out the
+intended to do so. [Igor](http://twitter.com/igorwesome) broke out the
 following *after* I went through a whole lot of stupid things on my
 own.
 
