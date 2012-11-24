@@ -1,9 +1,8 @@
 ---
 layout: base.twig
 generator: pagination
-generator_data: posts
 pagination:
-    max_per_page: 20
+    max_per_page: 5
 use:
     - posts
 ---
@@ -41,6 +40,14 @@ use:
             {% else %}
                 {{ post.blocks.content|raw }}
             {% endif %}
+    {% if post.meta.tags %}
+    <p class="tags">
+    Tags:
+    {% for tag in post.meta.tags %}
+    <a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+    </p>
+    {% endif %}
         </div>
     </article>
   {% endfor %}

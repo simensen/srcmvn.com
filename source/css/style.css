@@ -223,7 +223,8 @@ header.site h2 {
 .mainContent article.post footer .meta.author {
 }
 
-.mainContent article.post footer .meta.tags {
+.mainContent .tags {
+    font-size: .75em;
 }
 
 .mainContent article.post footer .meta.sharing {

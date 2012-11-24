@@ -28,7 +28,7 @@
     <p class="meta tags">
     Tags:
     {% for tag in page.tags %}
-    {{ tag }}{% if not loop.last %}, {% endif %}
+    <a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
     {% endfor %}
     </p>
     {% endif %}

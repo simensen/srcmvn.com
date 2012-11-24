@@ -37,6 +37,14 @@ use:
     <content type="html"><![CDATA[{{ post.blocks.content|raw }}
 <p><a rel="bookmark" href="{{ site.url }}{{ post.url }}">&infin; {{ site.title }} Permalink</a></p>
 {% if post.meta.externalLink %}<p><a rel="bookmark" href="{{ post.meta.externalLink }}">&rarr; External Link</a></p>{% endif %}
+{% if post.meta.tags %}
+<p>
+Tags:
+{% for tag in post.meta.tags %}
+<a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+{% endfor %}
+</p>
+{% endif %}
 ]]></content>
   </entry>
   {% endfor %}

@@ -1,14 +1,14 @@
 ---
 layout: base.twig
-title: Blog Archive
-generator: pagination
+title: Tag Archive
+generator: [tag, pagination]
 pagination:
-    max_per_page: 50
-use:
-    - posts
+    max_per_page: 2
+    provider: page.tagged_posts
 ---
 {% set year = '0' %}
 <div id="blog-archives">
+<h1>{{ page.tag }}</h1>
 {% for post in page.pagination.items %}
 {% set this_year %}{{ post.date | date("Y") }}{% endset %}
 {% if year != this_year %}

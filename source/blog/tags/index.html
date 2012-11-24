@@ -1,0 +1,13 @@
+---
+layout: base.twig
+title: Tags
+use:
+    - tag
+---
+<div id="blog-archives">
+<h1>Tags</h1>
+
+{% for tag,posts in data.tag %}
+<a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>
+{% endfor %}
+</div>
