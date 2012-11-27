@@ -3,7 +3,11 @@ layout: post
 title: "Doctrine DBAL query logging with Monolog in Silex"
 date: 2011-11-10 22:48
 comments: true
-tags: silex symfony doctrine-dbal monolog
+tags:
+    - silex
+    - symfony
+    - doctrine-dbal
+    - monolog
 
 ---
 {% block excerpt %}

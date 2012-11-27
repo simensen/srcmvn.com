@@ -4,7 +4,13 @@ title: "Rails: RVM + Passenger (Standalone behind nginx) + Upstart on Ubuntu 10.
 date: 2011-12-16 21:06
 comments: true
 description: "Rails: RVM + Passenger (Standalone behind nginx) + Upstart on Ubuntu 10.04"
-tags: ubuntu upstart nginx passenger rvm rails
+tags:
+    - ubuntu
+    - upstart
+    - nginx
+    - passenger
+    - rvm
+    - rails
 
 ---
 

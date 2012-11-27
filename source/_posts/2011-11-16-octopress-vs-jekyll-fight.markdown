@@ -3,7 +3,10 @@ layout: post
 title: "Octopress vs. Jekyll: Fight!"
 date: 2011-11-16 21:48
 comments: true
-tags: jekyll octopress ruby
+tags:
+    - jekyll
+    - octopress
+    - ruby
 
 ---
 
