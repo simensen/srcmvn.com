@@ -2,7 +2,9 @@
 layout: post
 title: "Lincoln Loop Layout and Best Practices"
 date: 2012-11-08 13:42
-tags: django
+tags:
+    - cheat
+    - django
 
 ---
 Early into my adventures with Django I saw a few references to [Lincoln Loop][0].
