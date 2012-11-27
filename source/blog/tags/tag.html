@@ -1,7 +1,7 @@
 ---
 layout: base.twig
 title: Tag Archive
-generator: [tag, pagination]
+generator: [posts_tag_index, pagination]
 pagination:
     max_per_page: 2
     provider: page.tagged_posts
@@ -14,12 +14,11 @@ pagination:
 {% if year != this_year %}
   {% set month = '0' %}
   {% set year = this_year %}
-  <h2>{{ year }}</h2>
 {% endif %}
-{% set this_month %}{{ post.date | date("M") }}{% endset %}
+{% set this_month %}{{ post.date | date("F") }}{% endset %}
 {% if month != this_month %}
   {% set month = this_month %}
-  <h3>{{ month }}</h3>
+  <h2>{{ month }} {{ year }}</h2>
 {% endif %}
 <article>
   {% include "individual_archived_post.twig" %}

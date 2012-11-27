@@ -2,12 +2,12 @@
 layout: base.twig
 title: Tags
 use:
-    - tag
+    - posts_tags
 ---
 <div id="blog-archives">
 <h1>Tags</h1>
 
-{% for tag,posts in data.tag %}
+{% for tag,posts in data.posts_tags %}
 <a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
 </div>
