@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Update on Sculpin, my PHP Static Site Generator
+title: An Update on Sculpin
 date: 2012-12-04 10:31
 tags:
     - sculpin
