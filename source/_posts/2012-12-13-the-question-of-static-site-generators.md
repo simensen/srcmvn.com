@@ -59,7 +59,7 @@ Two years ago they probably would have been WordPress sites.
 
 These days I prefer statically generated sites if I can help it. No more working in
 WordPress PHP or rolling a one off custom application if it isn't *really* required.
-I still get to work with tools I'm familiar with and enjoy. Being able to use high\
+I still get to work with tools I'm familiar with and enjoy. Being able to use high
 quality tools like [Twig][1] make all the difference.
 
 To top it off, deployment has been a dream. No more worrying about databases being down.
