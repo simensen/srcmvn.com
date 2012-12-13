@@ -8,6 +8,7 @@ tags:
     - jekyll
     - liquid
     - twig
+    - wordpress
 
 ---
 
