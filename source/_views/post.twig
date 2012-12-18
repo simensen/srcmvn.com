@@ -37,13 +37,13 @@
         <div class="g-plusone" data-size="medium"></div>
         <!-- <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div> -->
     </div>
-{% if page.previousPost or page.nextPost %}
+{% if page.previous_post or page.next_post %}
     <nav class="article clearfix">
-    {% if page.previousPost %}
-    <a class="previous" href="{{ site.url }}{{ page.previousPost.url }}" title="{{ page.previousPost.title }}"><span class="title">{{ page.previousPost.title }}</span></a>
+    {% if page.previous_post %}
+    <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a>
     {% endif %}
-    {% if page.nextPost %}
-    <a class="next" href="{{ site.url }}{{ page.nextPost.url }}" title="{{ page.nextPost.title }}"><span class="title">{{ page.nextPost.title }}</span></a>
+    {% if page.next_post %}
+    <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a>
     {% endif %}
     </nav>
 {% endif %}
