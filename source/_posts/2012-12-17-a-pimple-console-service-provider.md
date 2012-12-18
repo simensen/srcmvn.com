@@ -68,6 +68,9 @@ It is pretty easy to do this manually, though:
     
     $app = new Pimple;
     
+    $app['console.name'] = 'MyApp';
+    $app['console.version'] = '1.0.5';
+    
     $consoleServiceProvider = new BaseConsoleServiceProvider;
     $consoleServiceProvider->register($app);
     
