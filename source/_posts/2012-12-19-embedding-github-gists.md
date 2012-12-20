@@ -66,6 +66,8 @@ and a Symfony Bundle ([dflydev/github-gist-twig-bundle][14]). After all, if
 I ever wanted to host my coding blog with my own static site generator it
 better satisfy my Gist needs, right?
 
+---
+
 It took this new Gist update for me to really come to my senses. Long gone
 are the horrible WordPress days in which it was very difficult to properly
 embed code in a blog. Brandon is right. If your content platform can handle
