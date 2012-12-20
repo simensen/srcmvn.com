@@ -53,9 +53,8 @@ to [Dave Winer's opinions][8] on [Corporate Silos][9]. I wanted to host my own c
 again but I didn't really want to worry about databases and keeping software up to date.
 
 Around that time I was introduced to [Jekyll][10]. A little later I was introduced
-to [Octopress][11]. While I struggled with Jekyll I was super excited to see that
-Octopress had a GitHub Gist plugin. It meant I could more or less continue to feed my
-blogging by Gist habit.
+to [Octopress][11]. I was super excited to see that Octopress had a GitHub Gist plugin.
+It meant I could more or less continue to feed my blogging by Gist habit.
 
 When I decided to roll my own static site generator ([Sculpin][12]) one of my big
 goals was to ensure that it would support plugins. The first plugin I wrote in order
