@@ -124,11 +124,11 @@ interest in working with WordPress PHP and given there are hopefully better ways
 handle this now (either by other WordPress plugins or *moving off of WordPress*)
 I do not think I want to devote more resources to this project.
 
-I may make one last change but I am more likely to just put the project on hold. It
-should continue to work as-is until GitHub makes another breaking change. If someone
-feels the need to fork it and add additional functionality down the line I think I'm
-OK with that at this point. If the time comes to delete it from the WordPress plugin
-repository, I think it will be an easy decision.
+I may make one last change but I am more likely to just put the project on hold. With
+the fixes from last week it should continue to work as-is until GitHub makes another
+breaking change. If someone feels the need to fork it and add additional functionality
+down the line I think I'm OK with that at this point. If the time comes to delete it
+from the WordPress plugin repository, I think it will be an easy decision.
 
 As for me, I'm going to continue *not* using Gist to do any code examples that
 I plan to embed in blog posts.
