@@ -44,10 +44,8 @@ software: the [Embed GitHub Gist][7] plugin for WordPress. Things were good.
 For a time.
 
 After another year or so I grew weary of maintaining multiple WordPress installations
-and eventually moved my blogs to Posterous. It worked well in the beginning. I tried
-to use WordPress for other purposes and eventually threw the towel in altogether
-on intentionally trying to use WordPress for *anything*. Things were good again.
-For a time.
+and eventually moved my blogs to Posterous. It worked well in the beginning. Things
+were good again. For a time.
 
 Eventually Posterous began to wear on me. It became slower. Its fancy publishing
 features worked only half the time. Its search was whack. I also started to subscribe
@@ -119,13 +117,12 @@ to injury it was not my fault. Nothing changed in my software. I think that is t
 problem here. People were relying on my software to share code from an entirely separate
 service. A service that nobody has any real control over.
 
-I do not want to abandon the users of my most popular software but I have little
-interest in working with WordPress PHP and given there are hopefully better ways to
-handle this now (either by other WordPress plugins or *moving off of WordPress*)
-I do not think I want to devote more resources to this project.
+I do not want to abandon the users of my most popular software but given there are
+hopefully better ways to handle this now (either by other WordPress plugins or *moving
+off of WordPress if you are doing a developer blog*) I do not think I will be devoting
+more resources to this project.
 
-I may make one last change but I am more likely to just put the project on hold. With
-the fixes from last week it should continue to work as-is until GitHub makes another
+With the fixes from last week it should continue to work as-is until GitHub makes another
 breaking change. If someone feels the need to fork it and add additional functionality
 down the line I think I'm OK with that at this point. If the time comes to delete it
 from the WordPress plugin repository, I think it will be an easy decision.
