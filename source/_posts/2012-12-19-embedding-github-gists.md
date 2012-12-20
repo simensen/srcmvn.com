@@ -79,9 +79,9 @@ lead it really makes a lot of sense to just write the code directly into
 my content. If I think it is important to share the code in a way that people
 can more easily collaborate I can simply link to a Gist.
 
-I had already started down this path on my own. About a month ago I finally
-got around to looking into [highlight.js][15] and integrated it into the
-Source Maven site. Since then I've only used simple Markdown code blocks
+Looking back I had already started to make this transition. About a month ago
+I finally got around to looking into [highlight.js][15] and integrated it into
+the Source Maven site. Since then I've only used simple Markdown code blocks
 for my source code sharing and things have been pretty nice.
 
 I wish I could say my reasons were more forward looking. My main reason for
