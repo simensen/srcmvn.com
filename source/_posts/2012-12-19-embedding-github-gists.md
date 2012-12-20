@@ -18,7 +18,7 @@ tags:
 > <footer>— [Brandon Mathis takes a stand on embedding Gists][1]</footer>
 
 Last week GitHub [released a pretty new version of Gist][2]. Huzzah! Oh wait,
-[it broke what now][3]?
+it broke what now?
 
 ---
 
@@ -90,11 +90,14 @@ properly highlighted by Gist.
 ---
 
 When the full realization of the impact last week's changes would have on
-several days worth of my free time I was frustrated. I was receiving support
-requests for software that was built on a premise that was starting to feel a
-lot more fragile than I had previously realized. And having to dive back into
-WordPress did not help things *at all*. I felt alone in my annoyance and
-frustration until I saw this:
+several days worth of my free time I became frustrated. I had built software on
+a premise that was starting to feel a lot more fragile than I had previously
+realized. I was receiving [support requests][3] for software I myself was no
+longer actually using. And to be quite honest, having to dive back into WordPress
+PHP did not help my overall attitude *at all*.
+
+I did not see anyone else talking about the problems introduced by the new Gist
+until I saw this:
 
 <blockquote class="twitter-tweet"><p>In 2.1 we dropped the js and instead are fetching gists and embedding them statically. It's in the 2.1 branch with no theme updates needed.</p>&mdash; Octopress (@octopress) <a href="https://twitter.com/octopress/status/281093876993912833" data-datetime="2012-12-18T17:49:37+00:00">December 18, 2012</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
