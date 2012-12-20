@@ -15,15 +15,15 @@ tags:
 
 > It is my opinion that embedding gists in a blog is a generally bad idea,
 > unless you are writing on a site with terrible code support.
-> <footer>— [Brandon Mathis takes a stance on Gist][1]</footer>
+> <footer>— [Brandon Mathis takes a stand on embedding Gists][1]</footer>
 
 Last week GitHub [released a pretty new version of Gist][2]. Huzzah! Oh wait,
 [it broke what now][3]?
 
 ---
 
-My first attempts at blogging about code involved [WordPress][4]. At the time,
-there were a wide variety of source code formatters and I really didn't like
+My first attempts at blogging about code involved [WordPress][4]. At the time
+there were a wide variety of source code formatters. I *really* didn't like
 many of them.
 
 > Posting Source Code with Wordpress is a pain in the ass. Is this really the
@@ -32,7 +32,7 @@ many of them.
 > support for sourcecode was even worse.
 > <footer>— [me back in January 2009][5]</footer>
 
-I do not recall how long it took me to find [Posterous][6], but in playing around
+I do not recall how long it took me to find [Posterous][6] but in playing around
 with it I discovered it had native support for GitHub Gist. Simply paste the
 Gist URL on its own line and **BAM!** instant code shared goodness in all its
 nicely styled glory.
@@ -49,18 +49,19 @@ to use WordPress for other purposes and eventually threw the towel in altogether
 on intentionally trying to use WordPress for *anything*. Things were good again.
 For a time.
 
-Eventually Posterous began to wear on me. It was slow. Its search was whack.
-I started to subscribe to [Dave Winer's opinions][8] on [Corporate Silos][9].
-I wanted to host my own content again but I didn't really want to worry about
-databases and keeping software up to date.
+Eventually Posterous began to wear on me. It became slower. Its fancy publishing
+features worked only half the time. Its search was whack. I also started to subscribe
+to [Dave Winer's opinions][8] on [Corporate Silos][9]. I wanted to host my own content
+again but I didn't really want to worry about databases and keeping software up to date.
 
-Around that time, I was introduced to [Jekyll][10] and later [Octopress][11].
-I was super excited to see that Octopress had a GitHub Gist plugin. It meant
-I could more or less continue to feed my blogging by Gist habit.
+Around that time I was introduced to [Jekyll][10]. A little later I was introduced
+to [Octopress][11]. While I struggled with Jekyll I was super excited to see that
+Octopress had a GitHub Gist plugin. It meant I could more or less continue to feed my
+blogging by Gist habit.
 
-When I decided to roll my own static site generator, [Sculpin][12], one of my big goals
-was to ensure that it would support plugins. The first plugin I wrote in order to
-prove my goal was a Twig extension ([dflydev/github-gist-twig-extension][13])
+When I decided to roll my own static site generator ([Sculpin][12]) one of my big
+goals was to ensure that it would support plugins. The first plugin I wrote in order
+to prove my goal was a Twig extension ([dflydev/github-gist-twig-extension][13])
 and a Symfony Bundle ([dflydev/github-gist-twig-bundle][14]). After all, if
 I ever wanted to host my coding blog with my own static site generator it
 better satisfy my Gist needs, right?
@@ -72,26 +73,28 @@ code natively and do a pretty decent job at it you should probably just use
 that.
 
 Especially when taking into account the silo-free life I'd like my sites to
-lead, it really makes a lot of sense to just write the code directly into
-my content and link to a Gist if I think it is important to share the code
-in a way that people can more easily collaborate.
+lead it really makes a lot of sense to just write the code directly into
+my content. If I think it is important to share the code in a way that people
+can more easily collaborate I can simply link to a Gist.
 
 I had already started down this path on my own. About a month ago I finally
 got around to looking into [highlight.js][15] and integrated it into the
 Source Maven site. Since then I've only used simple Markdown code blocks
 for my source code sharing and things have been pretty nice.
 
-I wish I could say my reasons were more forward looking but sadly I cannot.
-My main reason for making this change was not to rely less on Gist, it was
-because I was frustrated by needing to add `<?php` to the first line of my
-PHP source code for it to be properly highlighted by Gist.
+I wish I could say my reasons were more forward looking. My main reason for
+making this change was not to rely less on Gist, it was because I was frustrated
+by needing to add `<?php` to the first line of my PHP source code for it to be
+properly highlighted by Gist.
+
+---
 
 When the full realization of the impact last week's changes would have on
-several days worth of my free time I was frustrated. I started receiving support
+several days worth of my free time I was frustrated. I was receiving support
 requests for software that was built on a premise that was starting to feel a
 lot more fragile than I had previously realized. And having to dive back into
 WordPress did not help things *at all*. I felt alone in my annoyance and
-frustration until I noticed this:
+frustration until I saw this:
 
 <blockquote class="twitter-tweet"><p>In 2.1 we dropped the js and instead are fetching gists and embedding them statically. It's in the 2.1 branch with no theme updates needed.</p>&mdash; Octopress (@octopress) <a href="https://twitter.com/octopress/status/281093876993912833" data-datetime="2012-12-18T17:49:37+00:00">December 18, 2012</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -106,24 +109,24 @@ in action with Sculpin.
 
 ---
 
-So where does that leave Embed GitHub Gist?
+So where does that leave [Embed GitHub Gist][7]?
 
 I have not often felt as helpless as I did realizing that countless sites relying
-on my code to help share code were probably either broken outright or looked
-absolutely horrible. What was worse is that *it was not my fault*. Nothing changed
-in my software. I think that is the real problem here. People were relying on my
-software to share code from an entirely separate service. A service that nobody
-has any real control over.
+on my software were either outright broken or looked absolutely horrible. To add insult
+to injury it was not my fault. Nothing changed in my software. I think that is the real
+problem here. People were relying on my software to share code from an entirely separate
+service. A service that nobody has any real control over.
 
-I cannot really abandon the users of my most popular software but I have little
-interest in working with WordPress at this point. I may make one last change but
-I am more likely to just put the project on hold. It should continue to work as-is
-and if someone feels the need to fork it and add additional functionality down the
-line I think I'm OK with that at this point. If GitHub breaks it again, it may just
-need to stay broken.
+I do not want to abandon the users of my most popular software but I have little
+interest in working with WordPress PHP and given there are hopefully better ways to
+handle this now (either by other WordPress plugins or *moving off of WordPress*)
+I do not think I want to devote more resources to this project.
 
-I have never been in a position to support legacy software *of my own* before,
-and it is about as fun as I always imagined it would be. :)
+I may make one last change but I am more likely to just put the project on hold. It
+should continue to work as-is until GitHub makes another breaking change. If someone
+feels the need to fork it and add additional functionality down the line I think I'm
+OK with that at this point. If the time comes to delete it from the WordPress plugin
+repository, I think it will be an easy decision.
 
 As for me, I'm going to continue *not* using Gist to do any code examples that
 I plan to embed in blog posts.
