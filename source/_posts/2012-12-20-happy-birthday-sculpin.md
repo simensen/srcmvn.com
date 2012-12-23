@@ -4,8 +4,6 @@ title: Happy Birthday Sculpin!
 date: 2012-12-20 22:15
 tags:
     - sculpin
-    - symfony
-    - composer
 
 ---
 
