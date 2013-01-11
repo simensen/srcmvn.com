@@ -10,4 +10,5 @@ on whether or not the view was going to be rendered as a modal.
 
 The solution:
 
-{{ gist(4028300) }}
+    form.fields['some_field'].widget.attrs['rows'] = 8
+

@@ -45,7 +45,20 @@ On the surface Upstart looks pretty simple and an improvement over System-V init
 
 Once everything became more simple with the Passenger RVM wrapper, I was able to try to come up with a simpler upstart script. Here are the contents of our `/etc/init/pivotal_cimonitor.conf`:
 
-{{ gist(1487570) }}
+    start on runlevel [2345]
+    stop on runlevel [!2345]
+     
+    # Hack so that passenger does not croak.
+    env HOME=/home/cimonitor
+     
+    # We must be in the project directory
+    chdir /home/cimonitor/pivotal_cimonitor
+     
+    # Launch passenger
+    exec /usr/local/rvm/bin/cimonitor_passenger start --environment=production --user cimonitor
+     
+    # Restart if passenger dies
+    respawn
 
 This starts passenger it cimonitor's own RVM and even manages to run it as a non-privileged user. Success!
 
