@@ -33,8 +33,8 @@ a phar and run it without having to explicitly configure anything.
 
 With respect to Kernel, this meant that I wanted the Kernel configuration
 (`app/config/kernel.yml`) and the Kernel class definition (`app/AppKernel.php`)
-completely optional. Anyone familiar with Kernel will know that this is going to
-be a problem.
+to be completely optional. Anyone familiar with Kernel will know that this was
+going to be a problem.
 
 The base Kernel implementation uses reflection magic to determine the `kernel.root`
 based on the file that defines the Kernel instance. This works when you know
@@ -46,12 +46,15 @@ tied to how Symfony Standard Edition is setup. Or maybe Symfony Standard Edition
 setup based on this restrction? Either way, there is no way to configure the root
 directory; It is always going to be setup by Magic.
 
-Due to the unique way that the Kernel handles setting root directory decorating
-Kernel is not an option. It **has** to be done by defining a subclass and it **has**
-to be handled in the constructor. This is far from ideal. I had hoped that this
-functionality could be added to Symfony core but alas, [it was not to be][3].
+Decorating the Kernel instance was not going to be an option due to when and how the
+Kernel handles setting the root directory and du to the fact that as a `protected`
+property other people (and indeed Kernel itself) access `$this->rootDir` directly.
 
-But all is not lost. It is possible even if it is not pretty.
+This meant that overriding the Kernel root directory **has** to be handled by the
+constructor. I had hoped that the ability to specify a custom root directory could
+be added to Symfony core but alas, [it was not meant to be][3].
+
+All is not lost. It is possible even if it is not pretty.
 
     class CustomKernel extends Kernel
     {
@@ -66,9 +69,10 @@ But all is not lost. It is possible even if it is not pretty.
     }
 
 While not the prettiest it *does* get the job done. This custom Kernel can now
-exist anywhere, whether deep inside `vendor/...` or even embedded in a phar.
+exist anywhere, whether deep inside `vendor/...` or embedded in a phar.
 
-We now have a base for building our application around our CustomKernel.
+We now have a base for building our application around our custom Kernel with no
+restrictions on where the Kernel lives in relation to our application.
 
 [1]: http://sculpin.io
 [2]: http://robloach.net
