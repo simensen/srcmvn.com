@@ -129,6 +129,9 @@ code {
   
   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 
+    white-space: pre;
+    overflow-x: scroll;
+    word-wrap: normal;
 }
 
 .rgba code {
@@ -166,6 +169,7 @@ footer.site a {
 
 header.site hgroup {
     font-size: .5em;
+    padding: .5em 0;
 }
 
 header.site h1,
@@ -175,12 +179,12 @@ header.site h2 {
     display: inline-block;
 }
 header.site h1 {
-    font-size: 2.5em;
+    font-size: 2.25em;
     margin-right: .2em;
     line-height: 1em;
 }
 header.site h2 {
-    font-size: 1em;
+    font-size: .75em;
 }
 
 header.site h1 a,
