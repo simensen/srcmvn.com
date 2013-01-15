@@ -19,7 +19,7 @@ in rebuilding Sculpin from scratch with Symfony's Kernel at its core.
 Since then I've become a huge fan of Symfony's Kernel. I believe that it can make a
 great base for applications of any type. I'd like to share some of the things that I've
 learned in the hopes that it will help to inspire the community to build more applications
-built around Symfony's Kernel.
+around Symfony's Kernel.
 
 
 ### Your Root Directory Is Where Now?
