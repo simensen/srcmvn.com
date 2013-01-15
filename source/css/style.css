@@ -275,6 +275,10 @@ footer.site .socialMedia ul {
     margin: 0;
     padding: 0;
 }
+footer.site .socialMedia ul li {
+    display: inline;
+    margin-left: .5em;
+}
 footer.site div.details {
     font-size: .75em;
 }
