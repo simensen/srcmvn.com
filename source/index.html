@@ -19,7 +19,7 @@ use:
             <a href="{{post.meta.externalLink}}">&rarr;</a>
             {% endif %}
         </div>
-        <h3>
+        <h3 class="postTitle">
             {% if post.meta.externalLink %}
                 {% if post.blocks.excerpt %}
                     <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -31,7 +31,7 @@ use:
                 <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
             {% endif %}
         </h3>
-        <div>
+        <div class="entryContent">
             {% if post.blocks.excerpt %}
                 {{ post.blocks.excerpt|raw }}
                 <p>

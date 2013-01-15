@@ -240,10 +240,19 @@ header.site h2 {
     padding-bottom: 2em;
     margin-top: 3em;
 }
-.indexPost h3 {
+.indexPost h3.postTitle {
     font-size: 1.5em;
     margin-bottom: 0;
 }
+.indexPost .entryContent h2,
+.indexPost .entryContent h3,
+.indexPost .entryContent h4 {
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 1px dashed #aaa;
+}
+
+
 .indexPost p:first-of-type {
 }
 footer.site a {
@@ -302,7 +311,7 @@ blockquote {
     header.site div.info,
     .mainContentContainer .mainContent,
     footer.site div.details {
-        max-width: 1000px;
+        max-width: 900px;
         padding-left: 2em;
         padding-right: 2em;
     }
@@ -333,7 +342,7 @@ blockquote {
         font-size: 1.5em;
         line-height: 1.5em;
     }
-    .indexPost h3 {
+    .indexPost h3.postTitle {
         font-size: 1.75em;
     }
     .mainContent article.post .entryContent blockquote {
