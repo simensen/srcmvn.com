@@ -72,7 +72,7 @@ While not the prettiest it *does* get the job done. This custom Kernel can now
 exist anywhere, whether deep inside `vendor/...` or embedded in a phar.
 
 We now have a base for building our application around our custom Kernel with no
-restrictions on where the Kernel lives in relation to our application.
+restrictions on where the Kernel lives in relation to our application directory.
 
 [1]: http://sculpin.io
 [2]: http://robloach.net
