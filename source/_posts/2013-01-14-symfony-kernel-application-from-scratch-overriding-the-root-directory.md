@@ -47,14 +47,14 @@ setup based on this restrction? Either way, there is no way to configure the roo
 directory; It is always going to be setup by Magic.
 
 Decorating the Kernel instance was not going to be an option due to when and how the
-Kernel handles setting the root directory and du to the fact that as a `protected`
+Kernel handles setting the root directory and due to the fact that as a `protected`
 property other people (and indeed Kernel itself) access `$this->rootDir` directly.
 
 This meant that overriding the Kernel root directory **has** to be handled by the
 constructor. I had hoped that the ability to specify a custom root directory could
-be added to Symfony core but alas, [it was not meant to be][3].
+be added to Symfony core. Alas, [it was not meant to be][3].
 
-All is not lost. It is possible even if it is not pretty.
+All is not lost. It is still possible even if it is not pretty.
 
     class CustomKernel extends Kernel
     {
