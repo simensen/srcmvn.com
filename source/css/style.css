@@ -270,7 +270,6 @@ footer.site div.details {
     padding-bottom: 1em;
 }
 footer.site .socialMedia {
-    float: right;
     font-size: 1em;
     font-weight: bold;
 }
@@ -282,6 +281,9 @@ footer.site .socialMedia ul {
 footer.site .socialMedia ul li {
     display: inline;
     margin-left: .5em;
+}
+footer.site .socialMedia ul li:first-of-type {
+    margin-left: 0;
 }
 footer.site div.details {
     font-size: .75em;
@@ -316,6 +318,9 @@ blockquote {
 }
 
 @media only screen and (min-width: 480px) {
+    footer.site .socialMedia {
+        float: right;
+    }
     header.site div.info,
     .mainContentContainer .mainContent,
     footer.site div.details {
