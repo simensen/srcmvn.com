@@ -32,21 +32,36 @@
     {% endfor %}
     </p>
     {% endif %}
+
+    {% if page.previous_post or page.next_post %}
+        <nav class="article clearfix">
+        {% if page.previous_post %}
+        <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a>
+        {% endif %}
+        {% if page.next_post %}
+        <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a>
+        {% endif %}
+        </nav>
+    {% endif %}
+
     <div class="meta sharing">
         <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="srcmvn" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
         <div class="g-plusone" data-size="medium"></div>
         <!-- <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div> -->
     </div>
-{% if page.previous_post or page.next_post %}
-    <nav class="article clearfix">
-    {% if page.previous_post %}
-    <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a>
-    {% endif %}
-    {% if page.next_post %}
-    <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a>
-    {% endif %}
-    </nav>
-{% endif %}
+    <div id="disqus_thread" style="margin-top: 2em"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'srcmvn';
+        var disqus_identifier = '{{ page.url }}';
+        var disqus_url = '{{ site.url }}{{ page.url }}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
  </footer>
 <script type="text/javascript">
 (function() {
