@@ -1,7 +1,6 @@
 {
     "require": {
-        "sculpin/sculpin": "2.*",
-        "dflydev/github-gist-twig-bundle": "1.*"
+        "sculpin/sculpin": "2.*"
     },
     "minimum-stability": "dev"
 }
