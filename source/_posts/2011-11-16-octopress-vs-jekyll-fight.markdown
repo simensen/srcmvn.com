@@ -28,6 +28,8 @@ I hit up [#BeerAndCodeSeattle](http://seattle.beerandcode.org/) to see if anyone
 {% block content %}
 
 
+<em>**Updated**: This post was followed up by [Something New](http://srcmvn.com/blog/2012/02/19/something-new/) in which I describe my decision to work on rolling my own static site generator, [Sculpin](http://sculpin.io). Find more posts tagged [sculpin](http://srcmvn.com/blog/tags/sculpin).</em>
+
 Octopress looked great on the surface! It came with a nice theme and a bunch of code display related plugins. It was not long before I started bump into a few issues, though.
 
 The biggest being that Octopress is structured in such a way that your site's content is supposed to live in the Octopress directory itself. This is great if you want to fork Octopress and get a blog started quickly. Not so good once you want to try and get an updated version of Octopress merged into your code.

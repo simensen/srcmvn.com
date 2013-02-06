@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Something New
+tags:
+    - sculpin
+    - octopress
+    - jekyll
 
 ---
 
