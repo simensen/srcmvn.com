@@ -13,6 +13,19 @@ A common requirement when writing service providers for [Pimple][1] based
 projects is to provide default values for some or all of the configuration
 parameters. Unfortunately, this is not as straightforward as it sounds.
 
+---
+
+<em>**Update**: And [just like that](https://github.com/fabpot/Silex/pull/622),
+the whole premise of this blog post became moot. [Thanks Igor!](https://igor.io)
+On one hand it is nice to have changed the world; on the other hand, it would
+have been nice to not have spent time writing this post. :P I would argue this
+is still a nice defensive strategy to guard against people going against the
+official recommendation and continue to set parameter values before registering
+a service, but I believe you can now officially tell someone to shove off and/or
+RTFM if they complain that your default parameters clobber their settings.</em>
+
+---
+
 Since we cannot guarantee how Pimple is being configured or the order in
 which our service provider is loaded strange things can happen if we try
 to set default values in our service provider's `register` method.
