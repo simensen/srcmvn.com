@@ -16,7 +16,7 @@ tags:
 
 > It is my opinion that embedding gists in a blog is a generally bad idea,
 > unless you are writing on a site with terrible code support.
-> <footer>— [Brandon Mathis takes a stand on embedding Gists][1]</footer>
+> <footer>— <a href="https://twitter.com/imathis/status/281095032038113280">Brandon Mathis takes a stand on embedding Gists</a></footer>
 
 Last week GitHub [released a pretty new version of Gist][2]. Huzzah! Oh wait,
 it broke what now?
