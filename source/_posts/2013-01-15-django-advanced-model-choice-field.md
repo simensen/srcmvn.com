@@ -66,7 +66,7 @@ An simple example of a template leveraging this change:
                             <input type="radio"
                                    name="{{ form.package.name }}"
                                    value="{{ choice.0 }}"
-                                   {% if form.package.value"|safe} == choice.0|safe %}
+                                   {% if form.package.value"|safe == choice.0|safe %}
                                        checked="checked"
                                    {% endif %}
                             >
