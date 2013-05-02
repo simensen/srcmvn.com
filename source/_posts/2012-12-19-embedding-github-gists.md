@@ -31,7 +31,7 @@ many of them.
 > way that the world handles dealing with source code in blogs? I know, not
 > everyone in the world uses Wordpress. But a good chunk does. And Blogger's
 > support for sourcecode was even worse.
-> <footer>— [me back in January 2009][5]</footer>
+> <footer>— <a href="http://blog.srcmvn.com/wordpress-and-posting-source-code">me back in January 2009</a></footer>
 
 I do not recall how long it took me to find [Posterous][6] but in playing around
 with it I discovered it had native support for GitHub Gist. Simply paste the

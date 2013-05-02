@@ -13,4 +13,4 @@ tags:
 > JavaScript, we built a navigation list that adjusts to fit the
 > size of the screen and adapts to differences in text sizing.
 > [View the demo](http://filamentgroup.com/examples/rwd-nav-patterns/).
-> <footer>— [@filamentgroup](http://twitter.com/filamentgroup) breaks down an example of [responsive navigation](http://filamentgroup.com/lab/responsive_design_approach_for_navigation/)
+> <footer>— <a href="http://twitter.com/filamentgroup">@filamentgroup</a> breaks down an example of <a href="http://filamentgroup.com/lab/responsive_design_approach_for_navigation/">responsive navigation</a></footer>

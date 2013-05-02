@@ -8,7 +8,7 @@ title: Does it make sense for a VCS based static site generator to have a lite w
 
 > Would it defeat the purpose of a VCS based static site generator to build a
 > web API to add and edit posts? (think: bookmarklet publishing)
-> <footer>— [@kirkryyn](https://twitter.com/kirkryyn/status/171452203985412098)</footer>
+> <footer>— <a href="https://twitter.com/kirkryyn/status/171452203985412098">@kirkryyn</a></footer>
 
 This is a question I have been asking myself for awhile. As much as I like the
 idea of a static site generator, having a nice bookmarklet to publish quotes
@@ -20,7 +20,7 @@ and found content makes blogging about such things so much nicer.
 
 > Would it defeat the purpose of a VCS based static site generator to build a
 > web API to add and edit posts? (think: bookmarklet publishing)
-> <footer>— [@kirkryyn](https://twitter.com/kirkryyn/status/171452203985412098)</footer>
+> <footer>— <a href="https://twitter.com/kirkryyn/status/171452203985412098">@kirkryyn</a></footer>
 
 This is a question I have been asking myself for awhile. As much as I like the
 idea of a static site generator, having a nice bookmarklet to publish quotes

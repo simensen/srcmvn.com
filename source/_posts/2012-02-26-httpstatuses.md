@@ -10,4 +10,4 @@ tags:
 
 > Database of HTTP status codes with their IETF and Wikipedia
 > descriptions. Maintained by [@citricsquid](http://twitter.com/citricsquid).
-> <footer>— [httpstatus.es](http://httpstatus.es/)</footer>
+> <footer>— <a href="http://httpstatus.es">httpstatus.es</a></footer>

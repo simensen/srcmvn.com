@@ -8,7 +8,7 @@ externalLink: http://scripting.com/stories/2012/02/21/whatIsRelativeWriting.html
 > What I'm hoping is that we can develop good ways of connecting writing,
 > on a consensual basis. I'd like to team up with people whose writing
 > complements mine.
-> <footer>— [Dave Winer on consensually connected writing](http://scripting.com/stories/2012/02/21/whatIsRelativeWriting.html)</footer>
+> <footer>— <a href="http://scripting.com/stories/2012/02/21/whatIsRelativeWriting.html">Dave Winer on consensually connected writing</a></footer>
 
 I dig [Dave Winer](http://scripting.com/). I'm not sure at what point I
 started following his blog but sometime last year I realized I was

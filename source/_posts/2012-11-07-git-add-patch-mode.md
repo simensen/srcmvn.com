@@ -15,7 +15,7 @@ tags:
 > instead of the entire file. This allows you to make
 > concise, well-crafted commits that make for an easier
 > to read history.
-> <footer>— [John Kary drops some Git knowledge](http://johnkary.net/git-add-p-the-most-powerful-git-feature-youre-not-using-yet/)</footer>
+> <footer>— <a href="http://johnkary.net/git-add-p-the-most-powerful-git-feature-youre-not-using-yet/">John Kary drops some Git knowledge</a></footer>
 
 This is one of those things you wish someone told you about
 a long time ago. Actually seeing it in action is pretty

@@ -15,7 +15,7 @@ tags:
 > APIs and prototyping. Of course, those use cases are the
 > main selling point, but they are by no means the limit of
 > what is possible.
-> <footer>— [Igor Wiedler discusses "scaling" Silex](https://igor.io/2012/11/09/scaling-silex.html)</footer>
+> <footer>— <a href="https://igor.io/2012/11/09/scaling-silex.html">Igor Wiedler discusses "scaling" Silex</a></footer>
 
 I've mentioned a few times that I think Silex can be difficult for
 new users because Silex has no structure. It definitely gives people

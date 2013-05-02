@@ -16,7 +16,7 @@ tags:
 > I don't have to worry about even configuring PHP<br>
 > I just put html on a web server and boom! instant win
 >
-> <footer>— [Igor Wiedler wins](http://twitter.com/igorwesome)</footer>
+> <footer>— <a href="http://twitter.com/igorwesome">Igor Wiedler wins</a></footer>
 
 One question I get asked pretty frequently after introducing people to [Sculpin][0]
 is why they would want to use a static site generator instead of either using a

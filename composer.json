@@ -1,6 +1,9 @@
 {
     "require": {
-        "sculpin/sculpin": "2.*"
-    },
-    "minimum-stability": "dev"
+        "sculpin/sculpin": "2.*@dev",
+
+        "dflydev/embedded-composer": "@dev",
+        "composer/composer": "@dev",
+        "symfony/console": "@dev"
+    }
 }

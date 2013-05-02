@@ -16,7 +16,7 @@ date: 2012-11-16 16:26
 > good starting point for new contributors. However I think the practice would
 > be even more effective if more projects did the same way, so that people
 > know to look for it.
-> <footer>— [Jordi tries to convert users into contributors](http://seld.be/notes/encouraging-contributions-with-the-easy-pick-label)</footer>
+> <footer>— <a href="http://seld.be/notes/encouraging-contributions-with-the-easy-pick-label">Jordi tries to convert users into contributors</a>
 
 I actually just noticed this labels on the [Composer][0] [repository][1] in
 the last week. Kinda surprised I hadn't noticed them earlier. When I asked him
