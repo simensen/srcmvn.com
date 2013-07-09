@@ -7,9 +7,20 @@ Powered by [Sculpin](http://sculpin.io). =)
 
 &copy; Beau Simensen
 
+
 Build
 -----
 
-    wget http://getcomposer.org/composer.phar
-    php composer.phar install
-    php vendor/bin/sculpin generate
+### If You Already Have Sculpin
+
+    sculpin install
+    sculpin generate --watch --server
+
+Your newly generated clone of [beau.io](https://beau.io) is now
+accessible at `http://localhost:8000/`.
+
+### If You Need Sculpin
+
+    curl -sS https://sculpin.io/installer | php
+    php sculpin.phar install
+    php sculpin.phar generate --watch --server

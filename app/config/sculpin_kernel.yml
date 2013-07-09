@@ -1,5 +1,3 @@
-framework:
-    secret: no to secret
 sculpin_posts:
     permalink: blog/:year/:month/:day/:filename/
 sculpin_markdown:
