@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symfony Live 2013 Portland: Embedded Composer Audio + Slides
+title: "Symfony Live 2013 Portland: Embedded Composer Audio + Slides"
 date: 2013-07-09 17:10
 tags:
     - symfony

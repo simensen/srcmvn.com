@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symfony Live 2013 Portland: Embedded Composer
+title: "Symfony Live 2013 Portland: Embedded Composer"
 date: 2013-05-23 15:00
 tags:
     - symfony
