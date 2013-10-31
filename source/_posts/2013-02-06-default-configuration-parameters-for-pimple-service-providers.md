@@ -112,21 +112,20 @@ writing the [Doctrine ORM Service Provider][4] and it works pretty nicely:
     $app->register(new ExampleServiceProvider);
 
     // CORRECT
-    echo var_dump($app['example.hello']); // string(5) "world"
+    echo var_dump($app['example.hello']); // string(5) "earth"
+
+    $app = new Application;
+    $app->register(new ExampleServiceProvider, array('example.hello' => 'earth'));
+
+    // CORRECT
+    echo var_dump($app['example.hello']); // string(5) "earth"
 
     $app = new Application;
     $app->register(new ExampleServiceProvider);
     $app['example.hello'] = 'earth';
 
     // CORRECT
-    echo var_dump($app['example.hello']); // string(5) "world"
-
-    $app = new Application;
-    $app->register(new ExampleServiceProvider, array('example.hello' => 'earth'));
-    $app['example.hello'] = 'earth';
-
-    // CORRECT
-    echo var_dump($app['example.hello']); // string(5) "world"
+    echo var_dump($app['example.hello']); // string(5) "earth"
 
 
 Now we get the same expected value in all cases. Huzzah!
