@@ -1,0 +1,23 @@
+{
+    "authors": [
+        {
+            "name": "Dragonfly Development Inc.",
+            "email": "info@dflydev.com",
+            "homepage": "http://dflydev.com"
+        },
+        {
+            "name": "Beau Simensen",
+            "email": "beau@dflydev.com",
+            "homepage": "http://beausimensen.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:sculpin/bootstrap-3-blog-theme.git"
+        }
+    ],
+    "require": {
+        "sculpin/bootstrap-3-blog-theme": "dev-master"
+    }
+}

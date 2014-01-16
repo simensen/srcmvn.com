@@ -1,61 +1,9 @@
 ---
-layout: base.twig
+layout: default
 generator: pagination
 pagination:
     max_per_page: 5
 use:
     - posts
 ---
-<div class="blog-index">
-  {% set index = true %}
-  {% for post in page.pagination.items %}
-    <article class="indexPost">
-        <div class="meta">
-            <time datetime="{{ post.date|date('c') }}" pubdate>
-                <span class='month'>{{ post.date|date('M') }}</span> <span class='day'>{{ post.date|date('jS') }}</span> <span class='year'>{{ post.date|date('Y') }}</span>
-            </time>
-            <a href="{{site.url}}{{post.url}}">&infin;</a>
-            {% if post.meta.externalLink %}
-            <a href="{{post.meta.externalLink}}">&rarr;</a>
-            {% endif %}
-        </div>
-        <h3 class="postTitle">
-            {% if post.meta.externalLink %}
-                {% if post.blocks.excerpt %}
-                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                    <a href="{{ post.meta.externalLink }}"> &rarr;</a>
-                {% else %}
-                    <a href="{{ post.meta.externalLink }}">{{ post.title }} &rarr;</a>
-                {% endif %}
-            {% else %}
-                <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-            {% endif %}
-        </h3>
-        <div class="entryContent">
-            {% if post.blocks.excerpt %}
-                {{ post.blocks.excerpt|raw }}
-                <p>
-                    <a href="{{site.url}}{{post.url}}">Read more</a>
-                </p>
-            {% else %}
-                {{ post.blocks.content|raw }}
-            {% endif %}
-    {% if post.meta.tags %}
-    <p class="tags">
-    Tags:
-    {% for tag in post.meta.tags %}
-    <a href="{{ site.url }}/blog/tags/{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-    {% endfor %}
-    </p>
-    {% endif %}
-        </div>
-    </article>
-  {% endfor %}
-</div>
-
-{% if page.pagination.previous_page or page.pagination.next_page %}
-<div>
-{% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
-{% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
-</div>
-{% endif %}
+{% include "blog_index" %}

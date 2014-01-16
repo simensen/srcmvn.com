@@ -1,5 +1,7 @@
 sculpin_content_types:
     posts:
         permalink: blog/:year/:month/:day/:filename/
+sculpin_theme:
+    theme: sculpin/bootstrap-3-blog-theme
 sculpin_markdown:
     parser_class: Michelf\Markdown
