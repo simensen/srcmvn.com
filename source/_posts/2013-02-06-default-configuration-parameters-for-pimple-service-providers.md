@@ -15,7 +15,7 @@ parameters. Unfortunately, this is not as straightforward as it sounds.
 
 ---
 
-<em>**Update**: And [just like that](https://github.com/fabpot/Silex/pull/622),
+<em>**Update**: And [just like that](https://github.com/silexphp/Silex/pull/622),
 the whole premise of this blog post became moot. [Thanks Igor!](https://igor.io)
 On one hand it is nice to have changed the world; on the other hand, it would
 have been nice to not have spent time writing this post. :P I would argue this

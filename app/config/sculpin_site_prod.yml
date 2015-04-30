@@ -1,0 +1,6 @@
+imports:
+    - sculpin_site.yml
+google_analytics_tracking_id: UA-12685022-2
+disqus_shortname: srcmvn
+hub_url: http://dflydev.superfeedr.com/
+url: http://srcmvn.com

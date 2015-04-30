@@ -2,10 +2,40 @@
 layout: base.twig
 generator: pagination
 pagination:
-    max_per_page: 5
+    max_per_page: 20
 use:
     - posts
 ---
+{% block metaTags %}
+    <meta name="robots" content="index, follow">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Source Maven (@srcmvn)" />
+    <meta property="og:type" content="article" />
+    {% if page.social_image %}
+        <meta property="og:image" content="{{ site.url }}{{ page.social_image }}" />
+    {% elseif page.cover_image %}
+        <meta property="og:image" content="{{ site.url }}{{ page.cover_image }}" />
+    {% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
+    <meta property="og:description" content="Code Partition for Beau Simensen" />
+
+    {% if page.social_image %}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image:src" content="{{ site.url }}{{ page.social_image }}">
+    {% elseif page.cover_image %}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image:src" content="{{ site.url }}{{ page.cover_image }}">
+    {% else %}
+        <meta name="twitter:card" content="summary" />
+    {% endif %}
+    <meta name="twitter:site" content="@srcmvn" />
+    <meta name="twitter:creator" content="@beausimensen" />
+    <meta name="twitter:title" content="Source Maven (@srcmvn)" />
+    <meta name="twitter:description" content="Code Partition for Beau Simensen (@beausimensen)" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+{% endblock %}
+{% block content %}
 <div class="blog-index">
   {% set index = true %}
   {% for post in page.pagination.items %}
@@ -38,7 +68,12 @@ use:
                     <a href="{{site.url}}{{post.url}}">Read more</a>
                 </p>
             {% else %}
-                {{ post.blocks.content|raw }}
+                <p>
+                {{ post.blocks.content|raw|striptags|split(' ')|slice(0,50)|join(' ')|raw }} &hellip;
+                </p>
+                <p>
+                    <a href="{{site.url}}{{post.url}}">Read more</a>
+                </p>
             {% endif %}
     {% if post.meta.tags %}
     <p class="tags">
@@ -59,3 +94,4 @@ use:
 {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
 </div>
 {% endif %}
+{% endblock %}

@@ -17,8 +17,20 @@ body {
     color: #333;
     background-color: #444;
     background-image: url(dark_mosaic.png);
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
 }
 
+small {
+    font-size: .5em;
+    color: #aaa;
+}
 a {
     color: #558;
 }
@@ -33,8 +45,19 @@ a:visited {
     background-image: url(husk.png);
 }
 
+.mainContent p:first-of-type {
+    xpadding-top: 1.4em;
+}
+
 .mainContent p {
-    line-height: 1.5em;
+    font-size: 1.375em;
+    line-height: 1.4em;
+    margin: 1.4em 0;
+    padding-bottom: 0;
+}
+
+.mainContent hr {
+    margin: 2.1em 0;
 }
 
 article.indexPost .meta {
@@ -108,11 +131,12 @@ article.post nav.article .next {
     margin-bottom: .25em;
 }
 
-.mainContent article.post.noLeadInfo .entryContent p:first-of-type,
+.mainContent article.post.noLeadInfo .entryContent > p:first-of-type,
 .mainContent article.post .leadInfo {
-    font-size: 1.15em;
-    line-height: 1.25em;
-    margin: 1.25em 0;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin: 1.25em 0 0;
+    font-weight: bolder;
 }
 
 code {
@@ -123,10 +147,10 @@ code {
     border: 1px solid #dedede;
     background-color: #ddd;
 
-  -webkit-border-radius: .25em; 
-     -moz-border-radius: .25em; 
-          border-radius: .25em; 
-  
+  -webkit-border-radius: .25em;
+     -moz-border-radius: .25em;
+          border-radius: .25em;
+
   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 
     white-space: pre;
@@ -173,7 +197,8 @@ header.site hgroup {
 }
 
 header.site h1,
-header.site h2 {
+header.site h2,
+header.site h3 {
     font-family: "Nunito", sans-serif;
     margin: 0;
     display: inline-block;
@@ -184,7 +209,16 @@ header.site h1 {
     line-height: 1em;
 }
 header.site h2 {
+    font-size: 1em;
+}
+
+header.site h3 {
     font-size: .75em;
+}
+
+header.site h3 a {
+    color: #555;
+    text-decoration: none;
 }
 
 header.site h1 a,
@@ -329,9 +363,9 @@ blockquote {
     header.site div.info,
     .mainContentContainer .mainContent,
     footer.site div.details {
-        max-width: 900px;
-        padding-left: 2em;
-        padding-right: 2em;
+        max-width: 750px;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     header.site hgroup {
         font-size: 1.5em;
@@ -354,14 +388,14 @@ blockquote {
     .mainContent article.post h1:first-of-type {
         font-size: 2.75em;
     }
-    
+
     .mainContent article.post.noLeadInfo .entryContent > p:first-of-type,
     .mainContent article.post .leadInfo {
         font-size: 1.5em;
-        line-height: 1.5em;
+        line-height: 1.4em;
     }
     .indexPost h3.postTitle {
-        font-size: 1.75em;
+        font-size: 2em;
     }
     .mainContent article.post .entryContent blockquote {
         font-size: 1.25em;

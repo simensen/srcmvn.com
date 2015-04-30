@@ -16,6 +16,7 @@
     <meta name="author" content="{{ site.author }}">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="generator" content="sculpin.io" />
+    {% block metaTags %}{% endblock %}
     <link href="{{site.url}}/atom.xml" rel="alternate" title="{{ site.title }}" type="application/atom+xml">
     <link rel="stylesheet" href="{{ site.url }}/css/boilerplate.css">
     <link rel="stylesheet" href="{{ site.url }}/css/style.css">
@@ -31,6 +32,12 @@
             <hgroup>
                 <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
                 <h2>{{ site.subtitle }}</h2>
+                <h3>
+                    <a href="https://beau.io">beau.io</a> &middot;
+                    <a href="http://thatpodcast.io">thatpodcast.io</a> &middot;
+                    <a href="http://ddd.io">ddd.io</a> &middot;
+                    <a href="http://dflydev.com">dflydev.com</a>
+                </h3>
             </hgroup>
         </div>
     </header>
@@ -45,7 +52,6 @@
         <div class="details">
             <div class="socialMedia">
                 <ul>
-                    <li class="tent"><a href="https://simensen.tent.is">^simensen.tent.is</a></li>
                     <li class="twitter"><a href="https://twitter.com/beausimensen">@beausimensen</a></li>
                     <li class="twitter"><a href="https://twitter.com/srcmvn">@srcmvn</a></li>
                 </ul>
@@ -59,17 +65,19 @@
     <script>window.jQuery || document.write('<script src="{{site.url}}/js/libs/jquery-1.6.4.min.js"><\/script>')</script>
     <script defer src="{{ site.url }}/js/plugins.js"></script>
     <script defer src="{{ site.url }}/js/script.js"></script>
+    {% if site.google_analytics_tracking_id %}
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-12685022-2']);
+      _gaq.push(['_setAccount', '{{ site.google_analytics_tracking_id }}']);
       _gaq.push(['_trackPageview']);
-    
+
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    {% endif %}
     <script type="text/javascript">
       var GoSquared = {};
       GoSquared.acct = "GSN-272988-L";
