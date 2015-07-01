@@ -1,7 +1,7 @@
 ---
 title: "Belated Review of PHP Tour Luxembourg"
 tags:
-    - conference
+    - conferences
     - afup
     - phptour
 

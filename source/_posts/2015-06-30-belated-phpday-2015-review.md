@@ -1,7 +1,7 @@
 ---
 title: Belated phpDay 2015 Review
 tags:
-    - conference
+    - conferences
     - phpday
     - psr-7
     - broadway
