@@ -50,6 +50,9 @@ It highlighted some potential issues with Broadway's event store. Willem-Jan dis
 
 Collectively we all saw some issues with various parts of Broadway and Willem-Jan sent two pull requests against Broadway in real-time to address some of them. For example, one of the `::assert` calls gave no indication as to what was actually wrong. It took us 5-10 minutes just to track down why we were seeing an exception. The next time someone does the same thing, we'll be told right away what the problem is.
 
+ * [#175: Removed @internal from public method](https://github.com/qandidate-labs/broadway/pull/175)
+ * [#176: Better error message for NamedConstructorAggregateFactory assertion](https://github.com/qandidate-labs/broadway/pull/176)
+
 This was my second live coding experience (unless you consider the interactive stuff I've done with Composer during my Composer tutorial "live coding") and it was a blast. I still have some things I need to work on (like slowing down) but overall I think it was pretty successful.
 
 I was reminded of another thing I need to do better during this tutorial. I'll often ask questions that are hard for people to answer in the way that would be most useful for me. For example, "Is everyone caught up?" is not a very good way to find out who *isn't* caught up. I need to try to remember to ask something more like, "Does anyone need more time?" or "Is anyone still working on this?"
@@ -76,7 +79,7 @@ The talk came in at a decent time. It was well under the 45 minute mark so I had
 
 There was one question that I didn't have a good answer for, and that is "what are some good real-world use cases for middleware." The cookie encryption middleware wasn't seen as a middleware anyone would use. While I disagree (I think a lot of people are doing cookie encryption) I wasn't able to come up with any "real-world" middleware examples. I think I didn't quite follow the question and I feared that if the cookie encryption middleware isn't seen as a legitimate use case, any of the middleware I could think of off the top of my head wouldn't work, either.
 
-On thinking now, the best example I've heard so far as a functioning middleware was one that Larry Garfield mentioned on our recent PHP Roundtable episode. That being a middleware that acted as a proxy between an API client and an underlying API where the proxy does some additional work like roles, authentication, and possibly filtering or doing transformations.
+On thinking now, the best example I've heard so far as a functioning middleware was one that [Larry Garfield](https://twitter.com/Crell) mentioned on our recent PHP Roundtable episode. That being a middleware that acted as a proxy between an API client and an underlying API where the proxy does some additional work like roles, authentication, and possibly filtering or doing transformations.
 
 I had been a little nervous about my PSR-7 talk format going in. It worked very well at phpDay and it was well received, but that was also three days before it was accepted. I wondered, "will it be received as well after PSR-7 has been out for awhile?"
 
