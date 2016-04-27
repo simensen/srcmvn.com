@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500|Bitter);
+.Beau_Navigation {
+  border-bottom: 1px solid #eeeeee;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95); }
+  .Beau_Navigation:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.Beau_Navigation__Menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 1em; }
+
+.Beau_Navigation__Menu_Item {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 2em; }
+
+.Beau_Navigation__Menu_Item:first-of-type {
+  display: none; }
+
+.Beau_Navigation__Menu_Link {
+  -webkit-transition: background-color .25s, color .25s, border .25s, fill .25s;
+  /* Safari */
+  transition: background-color .25s, color .25s ease, border .25s, fill .25s;
+  color: #555555;
+  text-decoration: none;
+  display: inline-block;
+  height: 2em;
+  padding: 0 .5em; }
+
+  .Beau_Navigation__Menu_Link:visited {
+    color: inherit;
+  }
+
+.Beau_Navigation__Menu_Link:hover {
+  color: rgba(85, 85, 85, 0.5); }
+
+.Beau_Navigation__Logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 3em;
+  height: 3em; }
+
+@media only screen and (min-width: 480px) {
+  .Beau_Navigation {
+    position: fixed;
+    left: 0;
+    top: 0; }
+
+  .Beau_Navigation__Logo {
+    float: left; }
+
+  .Beau_Navigation__Menu {
+    float: left;
+    padding: 0; }
+
+  .Beau_Navigation__Menu_Item {
+    line-height: 3em;
+    margin-right: .5em;
+    margin-left: .5em;
+    float: left; }
+
+  .Beau_Navigation__Menu_Link {
+    height: 3em; } }
+@media only screen and (min-width: 640px) {
+  .Beau_Navigation__Menu_Item:first-of-type {
+    display: inherit; } }
