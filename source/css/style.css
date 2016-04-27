@@ -13,6 +13,10 @@ footer.site div.details {
     padding: 0 1em;
 }
 
+header.site {
+  margin-top: 3em;
+}
+
 body {
     color: #333;
     background-color: #444;

@@ -20,6 +20,7 @@
     <link href="{{site.url}}/atom.xml" rel="alternate" title="{{ site.title }}" type="application/atom+xml">
     <link rel="stylesheet" href="{{ site.url }}/css/boilerplate.css">
     <link rel="stylesheet" href="{{ site.url }}/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/beau-navigation.css">
     <link rel="stylesheet" href="{{ site.url }}/css/helpers.css">
     <link rel="icon" href="{{ site.url }}/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,700|PT+Serif:regular,italic,bold,bolditalic|PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
@@ -27,17 +28,22 @@
     <script src="{{ site.url }}/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
+  <nav id="primary-navigation" class="Beau_Navigation">
+      <div class="Beau_Navigation__Content_Container">
+          <a href="https://beau.io" class="Beau_Navigation__Logo Beau_Navigation__Menu_Link">Beau Simensen</a>
+          <ul class="Beau_Navigation__Menu">
+              <li class="Beau_Navigation__Menu_Item"><a href="https://beau.io" class="Beau_Navigation__Menu_Link">Home</a></li>
+              <li class="Beau_Navigation__Menu_Item"><a href="https://beau.io/talks" class="Beau_Navigation__Menu_Link">Talks</a></li>
+              <li class="Beau_Navigation__Menu_Item"><a href="https://beau.io/blogs" class="Beau_Navigation__Menu_Link">Blogs</a></li>
+              <li class="Beau_Navigation__Menu_Item"><a href="https://thatpodcast.io" class="Beau_Navigation__Menu_Link">That Podcast</a></li>
+          </ul>
+      </div>
+  </nav>
     <header class="site">
         <div class="info">
             <hgroup>
                 <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
                 <h2>{{ site.subtitle }}</h2>
-                <h3>
-                    <a href="https://beau.io">beau.io</a> &middot;
-                    <a href="http://thatpodcast.io">thatpodcast.io</a> &middot;
-                    <a href="http://ddd.io">ddd.io</a> &middot;
-                    <a href="http://dflydev.com">dflydev.com</a>
-                </h3>
             </hgroup>
         </div>
     </header>
