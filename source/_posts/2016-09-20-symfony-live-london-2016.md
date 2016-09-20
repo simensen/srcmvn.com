@@ -41,7 +41,7 @@ Something else special about this event was that it was also the first Symfony L
 
 That's right. [I've joined the SensioLabs US team!](http://blog.sensiolabs.com/2016/09/20/sensiolabs-sets-up-house-in-the-usa)
 
-This was the first chance I've had to see any of my new co-workers in person. I've met many of them in the past, either online or at conferences but this was special and unique. I'll get to see a few of them at php[world] in November and a whole lot of them at [SymfonyCon Berlin](http://berlincon2016.symfony.com/)!
+This was the first chance I've had to see any of my new co-workers in person. I've met many of them in the past, either online or at conferences but this was special and unique. I'll get to see a few of them at [php[world]](https://world.phparch.com/) in November and a whole lot of them at [SymfonyCon Berlin](http://berlincon2016.symfony.com/)!
 
 
 ## Sans-Family
